@@ -10,10 +10,10 @@ function Homepages() {
   return (
     <div>
       
-      {/* <Home/> */}
-      {/* <Manage/> */}
+      <Home/>
+      <Manage/>
   
-      {/* <Mainfeatures/> */}
+      <Mainfeatures/>
       <HowItsWorks/>
       <Contact/>
     </div>

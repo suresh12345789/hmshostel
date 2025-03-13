@@ -1,5 +1,4 @@
 import React from "react";
-import { FaBookDead } from "react-icons/fa";
 import { MdBedroomParent } from "react-icons/md";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 function Manage() {

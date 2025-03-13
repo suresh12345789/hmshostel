@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Common/Navbar';
 import Home from './Pages/Homepages';
+import Contact from './Component/Home/Contact';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
 
             <Routes>
               <Route path="/" element={<Home/>} />
+              <Route path="/Contact" element={<Contact/>} />
           
           
               {/* <Route path="/Blog" element={<Blog />} />

@@ -45,23 +45,17 @@ function Mainfeatures() {
 
   return (
     <div>
-      <div className="mx-10 mt-10">
-        <div className="bg-[#F2FDA7] h-28 rounded-2xl ">
-          <div className="flex gap-10 items-center">
-            <div className=" mt-7 ml-32">
-              <button className=" text-white font-semibold text-md bg-gradient-to-r bg-[#19467D] py-4 px-16 rounded-full">
-                Start with a free plan
-              </button>
-            </div>
-            <div>
-              <h1 className="text-3xl font-semibold pt-5">
-                Experience our services with a free plan!
-              </h1>
-            </div>
-          </div>
-        </div>
+      <div className="text-center px-60 pt-10">
+        <h1 className="text-5xl font-semibold text-gray-400 leading-snug">
+          Manage bookings, room assignments, payments, user profiles, feedback,
+          services, reports, and notifications efficiently.
+        </h1>
+      </div>
 
-        <div className="flex gap-5 mt-10 ">
+    
+
+      <div className="mx-10 mt-10">
+        <div className="flex gap-5">
           <div className="bg-[#F2FDA7] mt-1 w-6 h-6 rounded-full shadow-md "></div>
           <h1 className="text-3xl  md:text-[40px] font-semibold">Main features</h1>
         </div>

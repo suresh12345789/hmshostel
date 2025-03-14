@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import mobile from "../../Asstes/images/Home/houselpng.png";
-
 import { GoArrowUp } from "react-icons/go";
 import { BsArrowDown } from "react-icons/bs";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -28,19 +27,6 @@ function Mainfeatures() {
       icon1: <GoArrowUp />,
       icon2: <BsArrowDown />,
     },
-
-
-
-
-
-
-
-
-
-
-
-
-    
     {
       id: 4,
       title: "Fixtures and inventory",
@@ -58,7 +44,6 @@ function Mainfeatures() {
 
   return (
     <div className="mx-10 mt-10">
-      {/* Header */}
       <div className="bg-[#F2FDA7] h-28 rounded-2xl flex items-center px-10">
         <button className="text-white font-semibold text-md bg-[#19467D] py-4 px-16 rounded-full">
           Start with a free plan
@@ -68,14 +53,12 @@ function Mainfeatures() {
         </h1>
       </div>
 
-      {/* Main Features Section */}
       <div className="flex items-center gap-3 mt-10">
         <div className="bg-[#F2FDA7] w-6 h-6 rounded-full shadow-md"></div>
         <h1 className="text-3xl md:text-[40px] font-semibold">Main features</h1>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-5">
-        {/* Image Section */}
         <div className="relative">
           <img
             src={mobile}
@@ -84,7 +67,6 @@ function Mainfeatures() {
           />
         </div>
 
-        {/* Features & Accordion Section */}
         <div>
           <div className="bg-orange-100 w-full py-5 rounded-xl p-5">
             <h1 className="text-3xl font-semibold">Apartments</h1>
@@ -109,7 +91,6 @@ function Mainfeatures() {
             </div>
           </div>
 
-          {/* Accordion Section */}
           <div className="space-y-5 mt-10">
             {data.map((service, index) => (
               <div key={service.id} className="rounded-xl bg-[#f2ece2]">
@@ -123,7 +104,6 @@ function Mainfeatures() {
                   </span>
                 </button>
 
-                {/* Content */}
                 <div
                   className={`bg-[#f2ece2] text-gray-600 text-sm px-5 pb-3 rounded-b-xl transition-all duration-300 ${
                     openIndex === index ? "block" : "hidden"

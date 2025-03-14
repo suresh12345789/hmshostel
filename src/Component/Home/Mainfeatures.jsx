@@ -9,7 +9,7 @@ function Mainfeatures() {
     {
       id: 1,
       title: "Tenants",
-      text: "The near-infrared light spectrum is not visible to the human eye, and therefore any light that has a wavelength greater than around 750nm, you will not be able to see with your naked eye. Your body will still be feeling all the powers of the light wavelengths though!",
+      text: "The near-inflight spectrum is not visible to the human eye, and therefore any light that has a wavelength greater than around 750nm, you will not be able to see with your naked eye. Your body will still be feeling all the powers of the light wavelengths though!",
       icon1: <GoArrowUp />,
       icon2: <BsArrowDown />,
     },

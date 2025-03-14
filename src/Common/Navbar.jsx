@@ -36,7 +36,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="/AboutUsPages"
+            href="/About"
             className={`group relative w-max hover:text-blue-700 ${isActive(
               "/AboutUsPages"
             )} group`}

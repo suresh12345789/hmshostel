@@ -4,6 +4,7 @@ import Navbar from './Common/Navbar';
 import Home from './Pages/Homepages';
 import Contact from './Component/Home/Contact';
 import Fotter from './Common/Fotter';
+import About from './Component/Home/About';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
 
             <Routes>
               <Route path="/" element={<Home/>} />
+              <Route path="/About" element={<About/>} />
               <Route path="/Contact" element={<Contact/>} />
           
           

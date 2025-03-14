@@ -8,27 +8,27 @@ const Fotter = () => {
       <div className="mx-5 mt-10 p-5 md:p-10 md:flex md:justify-around flex-col md:flex-row">
         <ul className="text-center mb-6 md:mb-0">
           <li>
-            <a href="#" className="text-[23px] md:text-2xl font-semibold">
+            <a href="#/" className="text-[23px] md:text-2xl font-semibold">
               Hostel Management System
             </a>
           </li>
-          <span className="grid place-content-center text-[10px]">
-            Manage Rent Easy
+          <span className="grid place-content-center text-[13px]">
+            MANAGE RENT EASY
           </span>
         </ul>
 
         <ul className="leading-10 font-light text-md text-center mb-6 md:mb-0">
           <li>
-            <a href="#">Features</a>
+            <a href="#/">Features</a>
           </li>
           <li>
-            <a href="#">Pricing</a>
+            <a href="#/">Pricing</a>
           </li>
           <li>
-            <a href="#">F&Q</a>
+            <a href="#/">F&Q</a>
           </li>
           <li>
-            <a href="#">Contacts</a>
+            <a href="#/">Contacts</a>
           </li>
         </ul>
 
@@ -37,14 +37,14 @@ const Fotter = () => {
             <button>
               <CgMail size={25} />
             </button>
-            <a href="mailto:hms@gmail.com">hms@gmail.com</a>
+            <a href="#/">hms@gmail.com</a>
           </li>
 
           <li className="flex justify-center items-center gap-2">
             <button>
               <FiPhoneCall size={25} />
             </button>
-            <a href="tel:+37064027602">+370 640 27602</a>
+            <a href="#/">+370 640 27602</a>
           </li>
         </ul>
       </div>

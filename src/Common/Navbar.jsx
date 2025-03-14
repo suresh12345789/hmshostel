@@ -19,7 +19,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="images"
-              className=" md:w-[120px]  md:h-[70px] w-[75px] h-[65px] object-cover"
+              className=" md:w-[120px]  md:h-[80px] w-[75px] h-[65px] object-cover"
             />
           </a>
         </div>
@@ -66,7 +66,7 @@ const Navbar = () => {
           </a>
         </nav>
         <div>
-          <button className=" bg-gradient-to-r from-[#787BFF] via-[#D67DFF] to-[#F39A55]  border-2 border-white py-2 px-10 rounded-full text-white text-lg">
+          <button className=" bg-[#19197080]  border-2  py-3 px-12 rounded-full text-white font-semibold text-xl">
             Sign in
           </button>
         </div>

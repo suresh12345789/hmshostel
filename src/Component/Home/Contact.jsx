@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="mx-5 md:mx-8 lg:mx-10 mt-10">
         <div className="flex">
         <div className="flex gap-5">
-        <div className="bg-[#F2FDA7] w-7 h-7 mt-1 rounded-full shadow-md "></div>
+        <div className="bg-[#F2FDA7] w-6 h-6 mt-1 rounded-full shadow-md "></div>
         <div className="text-2xl md:text-4xl lg:text-[40px] font-semibold">
           <h1>Contact Us</h1>
         </div>
@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="lg:flex lg:gap-10 font-normal">
           <div className="mt-5 bg-[#EAF5FC] lg:w-fit px-5 md:px-8 lg:px-10 py-5 md:py-8 lg:py-10 rounded-3xl">
             <h1 className='text-xl md:text-4xl font-semibold md:w-[400px] '>
-              Please contact us for more about <span className='text-[#417ABE]'>Rentooler!</span>
+              Please contact us for more about <span className='text-[#0C3B75]'>Rentooler!</span>
             </h1>
             <div className="mt-10">
               <img src={image} alt="Contact Us" className='rounded-3xl h-[50vh] w-[700px] object-cover' />

@@ -25,7 +25,7 @@ const HowItsWorks = () => {
     <>
       <div className="mx-3 md:mx-8 lg:mx-10 mt-5 ">
         <div className="flex gap-5">
-            <div className="bg-[#F2FDA7] mt-1 w-7 h-7 rounded-full shadow-md "></div>
+            <div className="bg-[#F2FDA7] mt-1 w-6 h-6 rounded-full shadow-md "></div>
           <h1 className="text-3xl  md:text-[40px] font-semibold"> How It Works</h1>
         </div>
 

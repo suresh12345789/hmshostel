@@ -170,10 +170,10 @@ function Mainfeatures() {
   return (
     <div>
       <div className="mx-10 mt-10">
-        <div className="bg-orange-400 h-28 rounded-2xl ">
+        <div className="bg-[#F2FDA7] h-28 rounded-2xl ">
           <div className="flex gap-10 items-center">
             <div className=" mt-7 ml-32">
-              <button className=" text-white font-semibold text-xl bg-gradient-to-r from-[#787BFF] via-[#D67DFF] to-[#ed4654] py-4 px-16 rounded-full">
+              <button className=" text-white font-semibold text-xl bg-gradient-to-r bg-[#19467D] py-4 px-16 rounded-full">
                 Start whith a free plane
               </button>
             </div>

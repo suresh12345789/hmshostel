@@ -4,6 +4,7 @@ import Manage from '../Component/Home/Manage'
 import Mainfeatures from '../Component/Home/Mainfeatures'
 import HowItsWorks from '../Component/Home/HowItsWorks'
 import Contact from '../Component/Home/Contact'
+import About from '../Component/Home/About'
 
 
 function Homepages() {
@@ -12,10 +13,10 @@ function Homepages() {
       
       <Home/>
       <Manage/>
-  
       <Mainfeatures/>
       <HowItsWorks/>
       <Contact/>
+      <About/>
     </div>
   )
 }

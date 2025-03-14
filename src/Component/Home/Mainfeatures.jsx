@@ -28,6 +28,19 @@ function Mainfeatures() {
       icon1: <GoArrowUp />,
       icon2: <BsArrowDown />,
     },
+
+
+
+
+
+
+
+
+
+
+
+
+    
     {
       id: 4,
       title: "Fixtures and inventory",

@@ -4,7 +4,7 @@ import { IoMenu } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import logo from "../Asstes/images/HMSLogo.png";
+import logo from "../Asstes/images/Hmsllogo1.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="images"
-              className="md:w-[120px] md:h-[80px] w-[75px] h-[65px] object-cover"
+              className="md:w-[120px] md:h-[80px] w-[90px] h-[65px] object-cover"
             />
           </a>
         </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+    
       <div
         className={`fixed inset-0 bg-black bg-opacity-50 z-50 text-black font-semibold text-xl transition-transform transform ${
           isMenuOpen ? "translate-x-0 duration-700" : "translate-x-full duration-700"

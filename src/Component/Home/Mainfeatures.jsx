@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import mobile from "../../Asstes/images/Home/mobilehostel.png";
+
+import mobile from "../../Asstes/images/Home/mobilehostel.png"
 import { GoArrowUp } from "react-icons/go";
 import { BsArrowDown } from "react-icons/bs";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -64,7 +65,7 @@ function Mainfeatures() {
           />
           <div className="flex items-center gap-3   left-5 md:left-10 absolute top-10">
             <div className="bg-[#F2FDA7] w-6 h-6 rounded-full shadow-md"></div>
-            <h1 className="text-3xl md:text-[40px] font-semibold">
+            <h1 className="text-3xl text-[#34f8f8] md:text-[40px] font-semibold">
               Main features
             </h1>
           </div>
@@ -96,10 +97,10 @@ function Mainfeatures() {
 
           <div className="space-y-5 mt-10">
             {data.map((service, index) => (
-              <div key={service.id} className="rounded-xl bg-[#f2ece2]">
+              <div key={service.id} className="rounded-xl bg-[#d7e4f2]">
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full h-full  flex justify-between items-center p-5 bg-[#f2ece2] text-slate-800 rounded-t-xl focus:outline-none"
+                  className="w-full h-full  flex justify-between items-center p-5 bg-[#d7e4f2] text-slate-800 rounded-xl focus:outline-none"
                 >
                   <span className="text-xl font-semibold">{service.title}</span>
                   <span className="transition-transform text-black font-bold duration-300">
@@ -108,7 +109,7 @@ function Mainfeatures() {
                 </button>
 
                 <div
-                  className={`bg-[#f2ece2] text-gray-600 text-sm px-5 pb-3 rounded-b-xl transition-all duration-300 ${
+                  className={`bg-[#d7e4f2] text-black text-sm px-5 pb-3 rounded-b-xl transition-all duration-300 ${
                     openIndex === index ? "block" : "hidden"
                   }`}
                 >

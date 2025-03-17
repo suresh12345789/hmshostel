@@ -1,38 +1,25 @@
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Navbar from './Common/Navbar';
-import Home from './Pages/Homepages';
-import Contact from './Component/Home/Contact';
-import Fotter from './Common/Fotter';
-import About from './Component/Home/About';
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./Common/Navbar";
+import Home from "./Component/Home/Home";
+import Manage from "./Component/Home/Manage";
+import Mainfeatures from "./Component/Home/Mainfeatures";
+import HowItsWorks from "./Component/Home/HowItsWorks";
+import About from "./Component/Home/About";
+import Contact from "./Component/Home/Contact";
+import Fotter from "./Common/Fotter";
 
 export default function App() {
   return (
     <BrowserRouter>
-
-    <Navbar/>
-
-
-            <Routes>
-              <Route path="/" element={<Home/>} />
-              <Route path="/About" element={<About/>} />
-              <Route path="/Contact" element={<Contact/>} />
-          
-          
-              {/* <Route path="/Blog" element={<Blog />} />
-
-              <Route path="/Commercial" element={<Commercial/>} />
-              <Route path="/Company"element={<Company/>}/>
-              <Route path="/Shop"element={<Shop/>}/>
-              <Route path="/Technology"element={<Technology/>}/>
-              <Route path="/StyleComp"element={<StyleComp/>}/>
-              <Route path="/Styled"element={<Styled/>}/> */}
-
-
-
-            </Routes>
-            <Fotter/>
-           
-
-          </BrowserRouter>)
+      <Navbar />
+      <Home />
+      <Manage />
+      <Mainfeatures />
+      <About />
+      <HowItsWorks />
+      <Contact />
+      <Fotter />
+    </BrowserRouter>
+  );
 }

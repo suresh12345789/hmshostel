@@ -1,8 +1,8 @@
-import React from "react";
-import { useState } from "react";
-import {MdClose } from "react-icons/md";
+import React, { useState } from "react";
+import { MdClose } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import logo from "../Asstes/images/HMSLogo.png";
 
@@ -10,81 +10,80 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  const isActive = (path) => (location.pathname === path ? "text-white" : "");
+  const isActive = (path) => {
+    const currentPath = location.pathname + location.hash;
+    return currentPath === path ? "text-blue-700" : "";
+  };
+  const navbarHeight=80;
+
   return (
-    <header className="text-brown  bg-gray-100   w-full z-10  sticky top-0  px-5  ">
-      <div className="flex items-center justify-between  md:py-4 py-2   mx-5 md:px-10 lg:px-10">
-        <div className="">
-          <a href="/">
+    <header className="text-brown bg-gray-100 w-full z-10 sticky top-0 px-5">
+      <div className="flex items-center justify-between md:py-4 py-2 mx-5 md:px-10 lg:px-10">
+        <div>
+          <a href="#">
             <img
               src={logo}
               alt="images"
-              className=" md:w-[120px]  md:h-[80px] w-[75px] h-[65px] object-cover"
+              className="md:w-[120px] md:h-[80px] w-[75px] h-[65px] object-cover"
             />
           </a>
         </div>
 
-        <nav className="items-center hidden lg:space-x-16   space-x-4 md:flex md:text-lg lg:text-lg font-semibold">
-          <a
-            href="/"
-            className={`group relative w-max hover:text-primary hover:text-blue-700 ${isActive(
-              "/HomePages"
+        <nav className="items-center hidden lg:space-x-16 space-x-4 md:flex text-lg font-semibold">
+          <HashLink smooth to="#"
+            className={`group  w-max hover:text-primary ${isActive(
+              "/"
             )} group`}
           >
             Home
-            <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-red-600   group-hover:w-full"></span>
-          </a>
+          </HashLink>
 
-          <a
-            href="/About"
-            className={`group relative w-max hover:text-blue-700 ${isActive(
-              "/AboutUsPages"
+          <HashLink
+            smooth
+            to="#About"
+            className={`group  w-max duration-700 hover:text-blue-700 ${isActive(
+              "/#About"
             )} group`}
           >
             About
-            <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-red-600   group-hover:w-full"></span>
-          </a>
+          </HashLink>
 
-          <a
-            href="/EventsPages"
-            className={`group relative w-max hover:text-blue-700 ${isActive(
-              "/EventsPages"
+          <HashLink
+            smooth
+            to="#HowitsWorks"
+            className={`group  w-max hover:text-blue-700 ${isActive(
+              "/#HowitsWorks"
             )} group`}
           >
-            Application
-            <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-red-600   group-hover:w-full"></span>
-          </a>
+            How it works
+          </HashLink>
 
-          <a
-            href="/Contact"
-            className={`group relative w-max hover:text-blue-700 ${isActive(
-              "/ContactPages"
+          <HashLink
+            smooth
+            to="#Contact"
+            className={`group w-max hover:text-blue-700 ${isActive(
+              "/#Contact"
             )} group`}
           >
             Contact
-            <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-red-600    group-hover:w-full"></span>
-          </a>
+          </HashLink>
         </nav>
-        <div>
-          <button className=" bg-[#19197080]  border-2  py-3 px-12 rounded-full text-white font-semibold text-xl">
-            Sign in
-          </button>
-        </div>
 
         <button onClick={() => setIsMenuOpen(true)} className="md:hidden">
           <IoMenu className="text-4xl" />
         </button>
       </div>
 
+      {/* Mobile Menu */}
       <div
         className={`fixed inset-0 bg-black bg-opacity-50 z-50 text-black font-semibold text-xl transition-transform transform ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
+          isMenuOpen ? "translate-x-0 duration-700" : "translate-x-full duration-700"
         } md:hidden`}
-        onClick={() => setIsMenuOpen(false)}
+        onClick={() => setIsMenuOpen(false)} 
       >
         <div
           className="absolute right-0 w-full h-full text-xl bg-white text-center p-5 transition-transform transform shadow-lg bg-darkGrey text-tan"
-          onClick={(e) => e.stopPropagation()}
+          onClick={(e) => e.stopPropagation()} 
         >
           <button
             onClick={() => setIsMenuOpen(false)}
@@ -93,27 +92,40 @@ const Navbar = () => {
             <MdClose size={30} />
           </button>
 
-          <nav className="mt-8 space-y-10 text-2xl flex flex-col items-center ">
-            <a href="/" className={` ${isActive("/")}`}>
+          <nav className="mt-8 space-y-10 text-xl flex flex-col items-center">
+            <HashLink
+              smooth
+              to="#"
+              className={`${isActive("/")}`}
+              onClick={() => setIsMenuOpen(false)} 
+            >
               Home
-            </a>
+            </HashLink>
 
-            <a
-              href="/AboutUsPages"
-              className={`  ${isActive("/AboutUsPages")}`}
+            <HashLink
+              smooth
+              to="#About"
+              className={`${isActive("/#About")}`}
+              onClick={() => setIsMenuOpen(false)} 
             >
               About
-            </a>
-            <a href="/EventsPages" className={` ${isActive("/EventsPages")}`}>
-              Event
-            </a>
-
-            <a href="/BlogPages" className={` ${isActive("/BLOG")}`}>
-              BLOG
-            </a>
-            <a href="/Contactpages" className={` ${isActive("/Contactpages")}`}>
+            </HashLink>
+            <HashLink
+              smooth
+              to="#HowitsWorks"
+              className={`${isActive("/#HowitsWorks")}`}
+              onClick={() => setIsMenuOpen(false)} 
+            >
+              How it works
+            </HashLink>
+            <HashLink
+              smooth
+              to="#Contact"
+              className={`${isActive("/#Contact")}`}
+              onClick={() => setIsMenuOpen(false)} 
+            >
               Contact
-            </a>
+            </HashLink>
           </nav>
         </div>
       </div>

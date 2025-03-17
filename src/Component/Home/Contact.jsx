@@ -4,7 +4,7 @@ import image from "../../Asstes/images/Home/contact.png";
 const Contact = () => {
   return (
     <>
-      <div className="mx-5 md:mx-8 lg:mx-10 mt-10">
+      <div id="Contact" className="mx-5 md:mx-8 lg:mx-10 mt-10">
         <div className="lg:flex lg:gap-10 font-normal">
           <div className="mt-5 bg-customBlue lg:w-fit px-5 md:px-8 lg:px-10 py-5 md:py-8 lg:py-10 rounded-3xl">
             <div className="flex gap-5">
@@ -13,15 +13,15 @@ const Contact = () => {
                 <h1>Contact Us</h1>
               </div>
             </div>
-            <h1 className="text-xl md:text-4xl font-semibold md:w-[400px] ">
-              Please contact us for more about{" "}
+            <h1 className="text-3xl md:text-3   font-semibold md:w-[400px] ">
+              Please contact us for more about
               <span className="text-[#0C3B75]">HMS</span>
             </h1>
             <div className="mt-10">
               <img
                 src={image}
                 alt="Contact Us"
-                className="rounded-3xl h-[50vh] w-full object-cover"
+                className="rounded-3xl h-[30vh] md:h-[50vh] w-full object-cover"
               />
             </div>
           </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                 htmlFor="message"
                 className="block text-md text-gray-600 font-medium"
               >
-                Your message{" "}
+                Your message
               </label>
               <input
                 id="message"
@@ -78,7 +78,7 @@ const Contact = () => {
             <div className="mt-14">
               <button
                 type="submit"
-                className="bg-[#E0F555] w-[200px] md:w-[250px] px-3 py-2 rounded-full font-semibold"
+                className="bg-[#E0F555] w-full text-center px-3 py-2 rounded-full font-semibold"
               >
                 Send
               </button>

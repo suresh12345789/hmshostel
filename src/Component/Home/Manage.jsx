@@ -10,6 +10,7 @@ function Manage() {
       text: "Hostel admins can manage bookings, room allocations, payments, and user details. They also handle feedback, services, and generate reports for efficient management.",
     },
     {
+      
       id: 1,
       title: "Admin Review Management",
       icon: <MdBedroomParent />,

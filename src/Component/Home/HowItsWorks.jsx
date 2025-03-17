@@ -6,7 +6,7 @@ const HowItsWorks = () => {
       Number: "01",
       Question: "  Property public Link and contract offer",
       Answer:
-        " Once a tenant   expres interest, the property’s public link is shared. This link provides potential tenants with comprehensive information about the apartment, including images, features, and detailed descriptions. If a tenant shows further interest, a preliminary contract offer is generated. This offer outlines the key terms and conditions of the lease, setting the groundwork before finalizing the formal agreement..",
+        " Once a tenant expresses interest, the property’s public link is shared. This link provides potential tenants with comprehensive information about the apartment, including images, features, and detailed descriptions. If a tenant shows further interest, a preliminary contract offer is generated. This offer outlines the key terms and conditions of the lease, setting the groundwork before finalizing the formal agreement..",
     },
     {
       Number: "02",

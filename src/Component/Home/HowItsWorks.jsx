@@ -1,12 +1,13 @@
 import React from "react";
+import works from "../../Asstes/images/Home/Works.png";
 
 const HowItsWorks = () => {
   const data = [
     {
       Number: "01",
-      Question: "  Property public Link and contract offer",
+      Question: "Property public Link and contract offer",
       Answer:
-        " Once a tenant   expres interest, the property’s public link is shared. This link provides potential tenants with comprehensive information about the apartment, including images, features, and detailed descriptions. If a tenant shows further interest, a preliminary contract offer is generated. This offer outlines the key terms and conditions of the lease, setting the groundwork before finalizing the formal agreement..",
+        " Once a tenant   expres interest, the property’s public link is shared. This link provides potential tenants with comprehensive information about the apartment, including images, features, and detailed descriptions. If a tenant shows further interest, a preliminary contract offer is generated.",
     },
     {
       Number: "02",
@@ -23,13 +24,12 @@ const HowItsWorks = () => {
   ];
   return (
     <>
-      <div className="mx-3 md:mx-8 lg:mx-10 mt-5 ">
+      <div id="HowitsWorks" className="mx-5 md:mx-8 lg:mx-10 mt-5 ">
         <div className=" lg:flex gap-5">
-          <div className="bg-customBlue md:w-full lg:w-fit p-5 md:p-8 lg:p-10 rounded-3xl mt-5 ">
+          <div className="bg-customBlue p-5 md:p-8 rounded-3xl mt-5 ">
             <div className="flex gap-5">
               <div className="bg-[#F2FDA7] mt-1 w-6 h-6 rounded-full shadow-md "></div>
               <h1 className="text-3xl  md:text-[40px] font-customFonts mb-5 md:mb-8 lg:mb-10">
-                {" "}
                 How It Works
               </h1>
             </div>
@@ -37,7 +37,7 @@ const HowItsWorks = () => {
             {data.map((item, index) => (
               <div
                 key={index}
-                className=" mt-5 bg-white shadow-md p-5 md:p-8 lg:p-10  md:w-full lg:w-[700px] rounded-3xl"
+                className="mt-5 bg-white shadow-md p-5 md:p-7  md:w-full lg:w-[700px] rounded-3xl"
               >
                 <div className="flex gap-5">
                   <div className="">
@@ -52,27 +52,20 @@ const HowItsWorks = () => {
                   </div>
                 </div>
 
-                <div className="mt-5 md:mt-8">
-                  <p className="w-full md:w-full lg:w-[580px] text-sm md:text-md lg:text-xl text-gray-950 leading-6 font-normal">
+                <div className="mt-3">
+                  <p className="w-full  text-sm md:text-xl leading-7   text-gray-950  font-normal">
                     {item.Answer}
                   </p>
                 </div>
               </div>
             ))}
           </div>
-          <div className=" mt-5">
+          <div className="mt-5">
             <img
-              className="rounded-3xl md:h-[540px] w-full object-cover"
-              src="https://cdn.internationalstudent.com/images/stock-images/youth-hostel.jpg"
-              alt=""
+              className="rounded-3xl md:h-[984px]  w-full"
+              src={works}
+              alt="images"
             />
-            <div className=" mt-5">
-              <img
-                className="rounded-3xl md:h-[540px] w-full object-cover"
-                src="https://img.freepik.com/free-photo/backpacker-using-her-phone-hostel-varanasi-india_53876-65346.jpg?t=st=1741867210~exp=1741870810~hmac=ddaf59aee537f3a98261a8c982e2baa4aa32e8239cf0a338f4ddbaffa0d3c6a6&w=1380"
-                alt=""
-              />
-            </div>
           </div>
         </div>
       </div>

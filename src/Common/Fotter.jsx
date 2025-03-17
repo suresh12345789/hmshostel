@@ -1,5 +1,5 @@
 import React from "react";
-import { CgMail } from "react-icons/cg";
+import { AiOutlineMail } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
 
 const Fotter = () => {
@@ -8,7 +8,7 @@ const Fotter = () => {
       <div className="mx-5 mt-10 p-5 md:p-10 md:flex md:justify-around flex-col md:flex-row">
         <ul className="text-center mb-6 md:mb-0">
           <li>
-            <a href="#/" className="text-[23px] md:text-2xl font-semibold">
+            <a href="#" className="text-[23px] md:text-2xl font-semibold">
               Hostel Management System
             </a>
           </li>
@@ -35,7 +35,7 @@ const Fotter = () => {
         <ul className="leading-10 font-light text-center">
           <li className="flex justify-center items-center gap-2 mb-2">
             <button>
-              <CgMail size={25} />
+            <AiOutlineMail size={25} />
             </button>
             <a href="#/">hms@gmail.com</a>
           </li>

@@ -8,7 +8,7 @@ const About = () => {
         id="About"
         className="mx-5 md:mx-8 lg:mx-10 mt-10 lg:grid grid-cols-2 gap-10"
       >
-        <div className="bg-customBlue  p-5 md:p-8 lg:p-10 mt-5 rounded-3xl ">
+        <div className="bg-[#FFB96D]  p-5 md:p-8 lg:p-10 mt-5 rounded-3xl ">
           <div className="">
             <div className="flex gap-5">
               <h1 className="text-3xl md:text-[40px] font-semibold  lg:mb-10 md:mb-8 mb-5">
@@ -16,7 +16,7 @@ const About = () => {
               </h1>
             </div>
 
-            <div className=" md:text-xl leading-7">
+            <div className=" md:text-xl leading-7 text-white">
               <p>
                 We are a vibrant and welcoming hostel dedicated to providing a
                 safe, clean, and comfortable environment for all our guests.

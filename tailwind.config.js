@@ -10,7 +10,10 @@ module.exports = {
       },
       colors: {
         customBlue: "#EAF5FC",
-        customRed:"#CA3A03"
+        customRed:"#CA3A03",
+        customOrange:"#FFB96D",
+
+
       },
       fontFamily:{
         

@@ -8,7 +8,7 @@ const Fotter = () => {
       <div className="mx-5 mt-10 p-5 md:p-10 md:flex md:justify-around flex-col md:flex-row">
         <ul className="text-center mb-6 md:mb-0">
           <li>
-            <a href="#" className="text-[23px] md:text-2xl font-semibold">
+            <a href="#home" className="text-[23px] md:text-2xl font-semibold">
               Hostel Management System
             </a>
           </li>

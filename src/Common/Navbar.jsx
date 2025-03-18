@@ -10,17 +10,15 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  const isActive = (path) => {
-    const currentPath = location.pathname + location.hash;
-    return currentPath === path ? "text-blue-700" : "";
+  const isActive = (hash) => {
+    return location.hash === hash ? "text-[#CA3A03]" : "";
   };
-  const navbarHeight=80;
 
   return (
-    <header className="text-brown bg-gray-100 w-full z-10 sticky top-0 px-5">
+    <header className="text-brown bg-white shadow-md w-full z-10 sticky top-0 px-5">
       <div className="flex items-center justify-between md:py-4 py-2 mx-5 md:px-10 lg:px-10">
         <div>
-          <a href="#">
+          <a href="/">
             <img
               src={logo}
               alt="images"
@@ -30,42 +28,45 @@ const Navbar = () => {
         </div>
 
         <nav className="items-center hidden lg:space-x-16 space-x-4 md:flex text-lg font-semibold">
-          <HashLink smooth to="#"
-            className={`group  w-max hover:text-primary ${isActive(
-              "/"
-            )} group`}
+          <HashLink
+            smooth
+            to="#"
+            className={`group w-max hover:text-primary ${isActive("#")}`}
           >
             Home
           </HashLink>
 
           <HashLink
             smooth
-            to="#About"
-            className={`group  w-max duration-700 hover:text-blue-700 ${isActive(
-              "/#About"
-            )} group`}
-          >
-            About
-          </HashLink>
-
-          <HashLink
-            smooth
             to="#HowitsWorks"
-            className={`group  w-max hover:text-blue-700 ${isActive(
-              "/#HowitsWorks"
-            )} group`}
+            className={`group w-max ${isActive("#HowitsWorks")}`}
           >
             How it works
           </HashLink>
 
           <HashLink
             smooth
-            to="#Contact"
-            className={`group w-max hover:text-blue-700 ${isActive(
-              "/#Contact"
-            )} group`}
+            to="#About"
+            className={`group w-max duration-700 ${isActive("#About")}`}
           >
-            Contact
+            About Us
+          </HashLink>
+
+          <HashLink
+            smooth
+            to="#Download"
+            className={`group w-max duration-700 ${isActive("#Download")}`}
+          >
+            Download
+          </HashLink>
+
+          <HashLink
+            smooth
+            to="#Contact"
+            className={`group w-max  bg-customRed px-3 py-2 rounded-lg text-white ${isActive("#Contact")}`}
+          >
+            Contact Us
+            
           </HashLink>
         </nav>
 
@@ -74,16 +75,15 @@ const Navbar = () => {
         </button>
       </div>
 
-    
       <div
         className={`fixed inset-0 bg-black bg-opacity-50 z-50 text-black font-semibold text-xl transition-transform transform ${
           isMenuOpen ? "translate-x-0 duration-700" : "translate-x-full duration-700"
         } md:hidden`}
-        onClick={() => setIsMenuOpen(false)} 
+        onClick={() => setIsMenuOpen(false)}
       >
         <div
           className="absolute right-0 w-full h-full text-xl bg-white text-center p-5 transition-transform transform shadow-lg bg-darkGrey text-tan"
-          onClick={(e) => e.stopPropagation()} 
+          onClick={(e) => e.stopPropagation()}
         >
           <button
             onClick={() => setIsMenuOpen(false)}
@@ -96,35 +96,46 @@ const Navbar = () => {
             <HashLink
               smooth
               to="#"
-              className={`${isActive("/")}`}
-              onClick={() => setIsMenuOpen(false)} 
+              className={`${isActive("#")}`}
+              onClick={() => setIsMenuOpen(false)}
             >
               Home
             </HashLink>
 
             <HashLink
               smooth
-              to="#About"
-              className={`${isActive("/#About")}`}
-              onClick={() => setIsMenuOpen(false)} 
-            >
-              About
-            </HashLink>
-            <HashLink
-              smooth
               to="#HowitsWorks"
-              className={`${isActive("/#HowitsWorks")}`}
-              onClick={() => setIsMenuOpen(false)} 
+              className={`${isActive("#HowitsWorks")}`}
+              onClick={() => setIsMenuOpen(false)}
             >
               How it works
             </HashLink>
+
+            <HashLink
+              smooth
+              to="#About"
+              className={`${isActive("#About")}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About Us
+            </HashLink>
+
+            <HashLink
+              smooth
+              to="#Download"
+              className={`${isActive("#Download")}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Download
+            </HashLink>
+
             <HashLink
               smooth
               to="#Contact"
-              className={`${isActive("/#Contact")}`}
-              onClick={() => setIsMenuOpen(false)} 
+              className={`${isActive("#Contact")}`}
+              onClick={() => setIsMenuOpen(false)}
             >
-              Contact
+              Contact Us
             </HashLink>
           </nav>
         </div>

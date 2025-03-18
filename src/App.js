@@ -8,16 +8,20 @@ import HowItsWorks from "./Component/Home/HowItsWorks";
 import About from "./Component/Home/About";
 import Contact from "./Component/Home/Contact";
 import Fotter from "./Common/Fotter";
+import Download from "./Component/Home/Download";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Home />
+
       <Manage />
       <Mainfeatures />
-      <About />
       <HowItsWorks />
+
+      <About />
+      <Download/>
       <Contact />
       <Fotter />
     </BrowserRouter>

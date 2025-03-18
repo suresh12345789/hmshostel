@@ -10,8 +10,11 @@ module.exports = {
       },
       colors: {
         customBlue: "#EAF5FC",
-        customYellow:"#F2FDA7"
+        customRed:"#CA3A03"
       },
+      fontFamily:{
+        
+      }
     },
   },
   plugins: [],

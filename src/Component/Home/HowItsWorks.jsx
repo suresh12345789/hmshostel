@@ -7,7 +7,7 @@ const HowItsWorks = () => {
       Number: "01",
       Question: "Property public Link and contract offer",
       Answer:
-        " Once a tenant   expres interest, the property’s public link is shared. This link provides potential tenants with comprehensive information about the apartment, including images, features, and detailed descriptions. If a tenant shows further interest, a preliminary contract offer is generated.",
+        " Once a tenant expresses interest, the property’s public link is shared. This link provides potential tenants with comprehensive information about the apartment, including images, features, and detailed descriptions. If a tenant shows further interest, a preliminary contract offer is generated.",
     },
     {
       Number: "02",
@@ -17,19 +17,18 @@ const HowItsWorks = () => {
     },
     {
       Number: "03",
-      Question: "Checkout process pr contract renewal",
+      Question: "Checkout process contract renewal",
       Answer:
         "The checkout process ensures a hassle-free tenant move-out by calculating final charges, performing property inspections, and processing refundable deposits. For contract renewals, the lease terms are updated, and the agreement is extended to continue without any disruption, providing a seamless transition for both the tenant and landlord.",
     },
   ];
   return (
     <>
-      <div id="HowitsWorks" className="mx-5 md:mx-8 lg:mx-10 mt-5 ">
+      <div id="HowitsWorks" className="mx-5 md:mx-8 lg:mx-10 mt-10 ">
         <div className=" lg:flex gap-5">
           <div className="bg-customBlue p-5 md:p-8 rounded-3xl mt-5 ">
             <div className="flex gap-5">
-              <div className="bg-[#F2FDA7] mt-1 w-6 h-6 rounded-full shadow-md "></div>
-              <h1 className="text-3xl  md:text-[40px] font-customFonts mb-5 md:mb-8 lg:mb-10">
+              <h1 className="text-3xl  md:text-[40px] font-customFonts mb-5 md:mb-8">
                 How It Works
               </h1>
             </div>
@@ -41,7 +40,7 @@ const HowItsWorks = () => {
               >
                 <div className="flex gap-5">
                   <div className="">
-                    <h1 className="bg-customYellow  text-2xl rounded-md px-2 py-2 md:py-2  text-[#1D5861] font-medium">
+                    <h1 className="bg-customRed text-white  text-2xl rounded-md px-2 py-2 md:py-2 font-medium">
                       {item.Number}
                     </h1>
                   </div>
@@ -53,7 +52,7 @@ const HowItsWorks = () => {
                 </div>
 
                 <div className="mt-3">
-                  <p className="w-full  text-sm md:text-xl leading-7   text-gray-950  font-normal">
+                  <p className="w-full  md:text-xl leading-7   text-gray-950  font-normal">
                     {item.Answer}
                   </p>
                 </div>

@@ -4,7 +4,7 @@ import firstdownload from '../../Asstes/images/Home/firstdownload.png'
 
 const Download = () => {
   return (
-    <div id="Download" className="bg-[#FFEDD3]  mt-10 mx-5 md:mx-8 lg:mx-10 md:flex gap-10 items-center justify-center  rounded-3xl ">
+    <div id="Download" className="bg-customLight  mt-10 mx-5 md:mx-8 lg:mx-10 md:flex gap-10 items-center justify-center  rounded-3xl ">
       <div className="flex justify-center items-center">
         <img src={firstdownload} alt="" className="" />
       </div>

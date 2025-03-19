@@ -21,7 +21,7 @@ export default function App() {
       <HowItsWorks />
 
       <About />
-      <Download/>
+      <Download />
       <Contact />
       <Fotter />
     </BrowserRouter>

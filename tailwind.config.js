@@ -9,9 +9,11 @@ module.exports = {
         customFonts: 600, 
       },
       colors: {
-        customBlue: "#EAF5FC",
+        primary: "#FFE5C8",
+        secondary:"#FFB96D",
         customRed:"#CA3A03",
-        customOrange:"#FFB96D",
+        customLight:"#FFEDD3"
+
 
 
       },

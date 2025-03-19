@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="text-brown bg-white shadow-md w-full z-10 sticky top-0 px-5">
+    <header className="text-brown bg-primary shadow-lg w-full z-10 sticky top-0 px-5">
       <div className="flex items-center justify-between md:py-4 py-2 mx-5 md:px-10 lg:px-10">
         <div>
           <a href="/">
@@ -28,21 +28,17 @@ const Navbar = () => {
         </div>
 
         <nav className="items-center hidden lg:space-x-16 space-x-4 md:flex text-lg font-semibold">
-          <HashLink
-            smooth
-            to="#"
-            className={`group w-max hover:text-primary ${isActive("#")}`}
-          >
+          <HashLink smooth to="#" className={`group w-max ${isActive("#")}`}>
             Home
           </HashLink>
 
           <HashLink
-            smooth
-            to="#HowitsWorks"
-            className={`group w-max ${isActive("#HowitsWorks")}`}
-          >
-            How it works
-          </HashLink>
+          smooth
+          to="#HowitsWorks"
+          className={`group w-max ${isActive("#HowitsWorks")}`}
+        >
+          How it works
+        </HashLink>
 
           <HashLink
             smooth
@@ -63,10 +59,11 @@ const Navbar = () => {
           <HashLink
             smooth
             to="#Contact"
-            className={`group w-max  bg-customRed px-3 py-2 rounded-lg text-white ${isActive("#Contact")}`}
+            className={`group w-max  bg-customRed px-3 py-2 rounded-lg text-white ${isActive(
+              "#Contact"
+            )}`}
           >
             Contact Us
-            
           </HashLink>
         </nav>
 
@@ -76,13 +73,15 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed inset-0 bg-black bg-opacity-50 z-50 text-black font-semibold text-xl transition-transform transform ${
-          isMenuOpen ? "translate-x-0 duration-700" : "translate-x-full duration-700"
+        className={`fixed inset-0 bg-black bg-opacity-50 z-50  text-black font-semibold text-xl transition-transform transform ${
+          isMenuOpen
+            ? "translate-x-0 duration-700"
+            : "translate-x-full duration-700"
         } md:hidden`}
         onClick={() => setIsMenuOpen(false)}
       >
         <div
-          className="absolute right-0 w-full h-full text-xl bg-white text-center p-5 transition-transform transform shadow-lg bg-darkGrey text-tan"
+          className="absolute right-0 w-full h-full text-xl bg-primary text-center p-5 transition-transform transform shadow-lg bg-darkGrey text-tan"
           onClick={(e) => e.stopPropagation()}
         >
           <button

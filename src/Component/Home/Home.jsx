@@ -4,7 +4,7 @@ import mobile from "../../Asstes/images/Home/tenents.png";
 
 function Home() {
   return (
-    <div>
+    <div id="#">
       <div className=" mt-5 relative  lg:mx-10 md:mx-8 mx-5 overflow-hidden md:block hidden">
         <img
           src={banner}

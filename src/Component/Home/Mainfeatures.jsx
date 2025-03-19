@@ -80,7 +80,7 @@ function Mainfeatures() {
         <div key={service.id} className="rounded-xl bg-[#ffb96d]">
           <button
             onClick={() => toggleAccordion(index)}
-            className="w-full h-full flex justify-between items-center p-5  bg-[#CA3A03] text-white rounded-xl focus:outline-none"
+            className="w-full h-full flex justify-between items-center p-5  bg-customRed text-white rounded-xl focus:outline-none"
           >
             <span className="text-xl font-semibold">{service.title}</span>
             <span className="transition-transform text-white font-bold duration-300">
@@ -89,7 +89,7 @@ function Mainfeatures() {
           </button>
 
           <div
-            className={`bg-[#ffb96d] text-black text-md px-5 pb-3 rounded-b-xl transition-all duration-300 overflow-hidden ${
+            className={`bg-secondary text-black text-md px-5 pb-3 rounded-b-xl transition-all duration-300 overflow-hidden ${
               openIndex === index
                 ? "max-h-screen opacity-100 visible"
                 : "max-h-0 opacity-0 invisible"

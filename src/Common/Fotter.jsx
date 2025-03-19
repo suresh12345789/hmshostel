@@ -4,7 +4,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 const Fotter = () => {
   return (
-    <div className="bg-[#19467D] text-white">
+    <div className="bg-secondary text-black font-semibold ">
       <div className="mx-5 mt-10 p-5 md:p-10 md:flex md:justify-around flex-col md:flex-row">
         <ul className="text-center mb-6 md:mb-0">
           <li>
@@ -17,7 +17,7 @@ const Fotter = () => {
           </span>
         </ul>
 
-        <ul className="leading-10 font-light text-md text-center mb-6 md:mb-0">
+        <ul className="leading-10  text-md text-center mb-6 md:mb-0">
           <li>
             <a href="#/">Features</a>
           </li>
@@ -32,7 +32,7 @@ const Fotter = () => {
           </li>
         </ul>
 
-        <ul className="leading-10 font-light text-center">
+        <ul className="leading-10  text-center">
           <li className="flex justify-center items-center gap-2 mb-2">
             <button>
             <AiOutlineMail size={25} />
@@ -49,8 +49,8 @@ const Fotter = () => {
         </ul>
       </div>
 
-      <div className="text-center bg-[#1c385a] py-3">
-        <span className="text-xs md:text-sm">
+      <div className="text-center bg-customLight text-black py-3">
+        <span className="">
           &#169; 2024 Hms. All Rights Reserved
         </span>
       </div>

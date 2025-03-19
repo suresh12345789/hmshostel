@@ -1,26 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontWeight: {
-        customFonts: 600, 
+        customFonts: 600,
+        semi: 600, 
       },
       colors: {
-        primary: "#FFE5C8",
-        secondary:"#FFB96D",
-        customRed:"#CA3A03",
-        customLight:"#FFEDD3"
-
-
-
+        primary: "#dceef7",
+        secondary: "#",
+        customwhite:'#F8F8F8', 
+        customblack:'#212121',
       },
-      fontFamily:{
-        
-      }
+      
     },
   },
   plugins: [],
-}
+};

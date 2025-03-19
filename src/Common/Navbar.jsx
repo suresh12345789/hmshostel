@@ -15,8 +15,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className="text-brown bg-primary shadow-lg w-full z-10 sticky top-0 px-5">
-      <div className="flex items-center justify-between md:py-4 py-2 mx-5 md:px-10 lg:px-10">
+    <header className="bg-white shadow-lg w-full z-10 sticky top-0">
+      <div className="flex items-center justify-between md:py-4 py-2 px-5 md:px-10 ">
         <div>
           <a href="/">
             <img
@@ -32,6 +32,15 @@ const Navbar = () => {
             Home
           </HashLink>
 
+          
+          <HashLink
+            smooth
+            to="#About"
+            className={`group w-max duration-700 ${isActive("#About")}`}
+          >
+            About Us
+          </HashLink>
+
           <HashLink
           smooth
           to="#HowitsWorks"
@@ -40,13 +49,6 @@ const Navbar = () => {
           How it works
         </HashLink>
 
-          <HashLink
-            smooth
-            to="#About"
-            className={`group w-max duration-700 ${isActive("#About")}`}
-          >
-            About Us
-          </HashLink>
 
           <HashLink
             smooth
@@ -59,7 +61,7 @@ const Navbar = () => {
           <HashLink
             smooth
             to="#Contact"
-            className={`group w-max  bg-customRed px-3 py-2 rounded-lg text-white ${isActive(
+            className={`group w-max  bg-customRed px-3 py-2 rounded-lg  ${isActive(
               "#Contact"
             )}`}
           >

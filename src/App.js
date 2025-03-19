@@ -18,9 +18,10 @@ export default function App() {
 
       <Manage />
       <Mainfeatures />
+      <About />
       <HowItsWorks />
 
-      <About />
+    
       <Download />
       <Contact />
       <Fotter />

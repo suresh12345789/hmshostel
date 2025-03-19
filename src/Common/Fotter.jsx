@@ -4,7 +4,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 const Fotter = () => {
   return (
-    <div className="bg-secondary text-black font-semibold ">
+    <div className="bg-primary text-customblack font-semibold ">
       <div className="mx-5 mt-10 p-5 md:p-10 md:flex md:justify-around flex-col md:flex-row">
         <ul className="text-center mb-6 md:mb-0">
           <li>
@@ -49,7 +49,7 @@ const Fotter = () => {
         </ul>
       </div>
 
-      <div className="text-center bg-customLight text-black py-3">
+      <div className="text-center bg-gray-200 text-black py-3">
         <span className="">
           &#169; 2024 Hms. All Rights Reserved
         </span>

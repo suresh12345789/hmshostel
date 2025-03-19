@@ -35,18 +35,18 @@ function Manage() {
 
   return (
     <div>
-      <div className="text-center  lg:px-60   px-10 sm:px-20  md:px-40 pt-10">
-        <h1 className=" lg:text-5xl md:text-4xl text-xl    font-semibold text-gray-400 leading-snug">
+      <div className="text-center  mx-10 pt-10 rounded-3xl  p-10 mt-10">
+        <h1 className=" lg:text-4xl md:text-4xl text-xl font-semibold  leading-snug">
           Manage bookings, room assignments, payments, user profiles, feedback,
           services, reports, and notifications efficiently.
         </h1>
       </div>
 
       <div className=" lg:mx-10 md:mx-8  mx-5 mt-10">
-        <div className="  mt-5 rounded-3xl  bg-secondary   relative   p-5   lg::p-10 md:p-8   gap-3 ">
+        <div className="  mt-5 rounded-3xl  bg-primary   relative   p-5   lg::p-10 md:p-8   gap-3 ">
           <div className="flex items-center gap-3   left-5 md:left-10 absolute top-6">
    
-            <h1 className="text-3xl md:text-[40px] font-semibold">Benefits</h1>
+            <h1 className="text-3xl md:text-[40px] text-customblack font-semi">Benefits</h1>
           </div>
 
           <div className="md:grid-cols-2 grid-cols-1  grid gap-5 mt-14">
@@ -54,7 +54,7 @@ function Manage() {
               <div key={value.id}>
                 <div className="  rounded-3xl      shadow-md    bg-white md:w-full lg:w-fit   md:p-10 lg:p-10            border-gray-500   p-5">
                   <div className="flex items-center">
-                    <h1 className="   text-4xl  lg:text-5xl font-semibold text-[#ca3b03cc]">
+                    <h1 className="   text-4xl  lg:text-5xl font-semibold text-[#9FFCF2]">
                       {value.icon}
                     </h1>
                     <h1 className=" md:pl-5 pl-3   text-xl md:text-2xl   font-semibold">

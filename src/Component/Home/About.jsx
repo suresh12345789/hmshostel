@@ -8,27 +8,15 @@ const About = () => {
         id="About"
         className="mx-5 md:mx-8 lg:mx-10 mt-10 lg:grid grid-cols-2 gap-10"
       >
-        <div className="bg-secondary  p-5 md:p-8 lg:p-10 mt-5 rounded-3xl ">
-          <div className="">
-              <h1 className="text-3xl flex justify-center items-center  md:text-[40px] font-semibold  lg:mb-10 md:mb-8 mb-5">
+        <div className=" p-5 md:p-8 lg:p-10 mt-5 rounded-3xl bg-[#f3e2e2] ">
+          <div className=" ">
+              <h1 className="text-3xl flex justify-center text-customblack items-center  md:text-[40px] font-semibold  lg:mb-10 md:mb-8 mb-5">
                 About Us
               </h1>
 
-            <div className=" md:text-xl leading-7 text-white">
+            <div className=" md:text-xl leading-7 text-customblack ">
               <p>
-                We are a vibrant and welcoming hostel dedicated to providing a
-                safe, clean, and comfortable environment for all our guests.
-                Whether you're traveling, studying, or seeking a temporary place
-                to stay, we strive to offer an experience that feels like home.
-                Our hostel offers a variety of accommodation options, ranging
-                from dormitories to private rooms, all equipped with essential
-                amenities to ensure your comfort. We prioritize the well-being
-                of our guests, making sure each stay is pleasant and enjoyable.
-                The friendly and professional staff at our hostel are always
-                available to assist with your needs, from offering local tips to
-                organizing activities that will help you explore the area. Our
-                goal is to create a community where guests from all over the
-                world can connect, share experiences, and learn from each other.
+              Welcome to our vibrant and welcoming hostel, where comfort, cleanliness, and safety come first. Whether you're traveling, studying, or just passing through, we provide a home-like atmosphere with a variety of accommodation options, from dorms to private rooms. Our friendly staff is here to make your stay memorable, offering local tips and organizing activities to help you explore. Join our global community, connect with fellow travelers, and enjoy an unforgettable experience!
               </p>
             </div>
           </div>

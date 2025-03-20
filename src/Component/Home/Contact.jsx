@@ -26,10 +26,7 @@ const Contact = () => {
                 <button className="text-white">
                   <FaPhoneAlt size={25} />
                 </button>
-                <a
-                  href="tel:+919948333447"
-                  className="text-lg md:text-xl text-white"
-                >
+                <a href="tel:+919948333447" className="md:text-xl text-white">
                   +91 9948333447
                 </a>
               </div>
@@ -40,7 +37,7 @@ const Contact = () => {
                 </button>
                 <a
                   href="mailto:shivakumar@cresolinfoserv.com"
-                  className="text-lg text-start text-white md:text-xl"
+                  className=" text-start text-white md:text-xl"
                 >
                   shivakumar@cresolinfoserv.com
                 </a>
@@ -50,45 +47,39 @@ const Contact = () => {
             <form className="md:mx-40">
               <div className="md:flex justify-between gap-5">
                 <div className="w-full">
-                  <label
-                    htmlFor="fullName"
-                    className="outline-none block text-md  font-medium"
-                  >
+                  <label htmlFor="fullName" className="outline-none  text-md  ">
                     Full Name
                   </label>
                   <input
                     id="fullName"
                     type="text"
-                    placeholder="Enter Your Full Name"
-                    className="outline-none border-b-2 text-sm mt-1 p-3 w-full bg-transparent text-white font-semibold placeholder-gray-300"
+                    className="outline-none border-b-[0.5px] text-sm mt-1 w-full bg-transparent text-white  "
                   />
                 </div>
                 <div className="w-full mt-5 md:mt-0">
-                  <label htmlFor="email" className="block text-md font-medium">
+                  <label htmlFor="email" className=" text-md ">
                     E-mail
                   </label>
                   <input
                     id="email"
                     type="email"
-                    placeholder="Enter your e-mail"
-                    className="outline-none border-b-2 text-sm mt-1 p-3 w-full bg-transparent text-white font-semibold placeholder-gray-300"
+                    className="outline-none border-b-[0.5px] text-sm mt-1 w-full bg-transparent text-white "
                   />
                 </div>
               </div>
 
               <div className="mt-5">
-                <label htmlFor="message" className="block text-md font-medium">
+                <label htmlFor="message" className=" text-md ">
                   Your message
                 </label>
                 <textarea
                   id="message"
-                  placeholder="Enter your message (optional)"
-                  className="outline-none border-b-2 text-sm mt-1 p-3 w-full bg-transparent  font-semibold placeholder-gray-300"
+                  className="outline-none border-b-[0.5px] text-sm mt-1 w-full bg-transparent  "
                 />
               </div>
 
-              <div className="mt-5  flex gap-3">
-                <input type="checkbox" className="w-5" />
+              <div className="mt-5 text-[12px] md:text-[14px] flex gap-3">
+                <input type="checkbox" className="w-4" />
                 <p className="">
                   By submitting your request, you agree to our Privacy Policy
                 </p>
@@ -97,7 +88,7 @@ const Contact = () => {
               <div className="mt-5 grid place-content-center">
                 <button
                   type="submit"
-                  className="bg-customRed text-white  w-[300px]  px-3 py-2 font-semibold"
+                  className="bg-customwhite  text-customblack rounded-lg  w-[200px]  px-3 py-2 font-semibold"
                 >
                   Send
                 </button>

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
-import mobile from "../../Asstes/images/Home/mobile1.png"
+import mobile from "../../Asstes/images/Home/mobile1.png";
 import { GoArrowUp } from "react-icons/go";
 import { BsArrowDown } from "react-icons/bs";
-
 
 function Mainfeatures() {
   const data = [
@@ -51,21 +50,15 @@ function Mainfeatures() {
   };
 
   return (
-    
     <div className=" md:mx-10 mx-5 mt-10">
- 
-
-     
-
       <div className="grid grid-cols-1 md:grid-cols-2 mt-10   gap-5 lg:gap-10 ">
         <div className="relative">
           <img
             src={mobile}
             alt="Mobile view"
-            className="rounded-2xl   h-[400px] md:h-[500px] lg:h-[500px] w-full object-cover"
-        
+            className="rounded-2xl h-[400px] md:h-[500px] lg:h-[500px] w-full object-cover"
           />
-          <div className="flex items-center gap-3   left-5 md:left-10 absolute top-10">
+          <div className="flex items-center gap-3   left-5 md:left-10 absolute top-7 md:top-10">
             <h1 className="text-3xl text-black md:text-[40px] font-semibold">
               Main features
             </h1>
@@ -73,33 +66,31 @@ function Mainfeatures() {
         </div>
 
         <div>
-     
+          <div className="space-y-5">
+            {data.map((service, index) => (
+              <div key={service.id} className="rounded-xl bg-[#d9e8f1] ">
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  className="w-full h-full flex justify-between items-center p-5  bg-[#b1e0f4] rounded-xl focus:outline-none"
+                >
+                  <span className="text-xl font-semibold">{service.title}</span>
+                  <span className="transition-transform text-black font-bold duration-300">
+                    {openIndex === index ? service.icon1 : service.icon2}
+                  </span>
+                </button>
 
-<div className="space-y-5">
-      {data.map((service, index) => (
-        <div key={service.id} className="rounded-xl bg-[#d9e8f1] ">
-          <button
-            onClick={() => toggleAccordion(index)}
-            className="w-full h-full flex justify-between items-center p-5  bg-[#b1e0f4] rounded-xl focus:outline-none"
-          >
-            <span className="text-xl font-semibold">{service.title}</span>
-            <span className="transition-transform text-black font-bold duration-300">
-              {openIndex === index ? service.icon1 : service.icon2}
-            </span>
-          </button>
-
-          <div
-            className={`bg-[#d9e8f1]  text-black text-md px-5 pb-3 rounded-b-xl transition-all duration-300 overflow-hidden ${
-              openIndex === index
-                ? "max-h-screen opacity-100 visible"
-                : "max-h-0 opacity-0 invisible"
-            }`}
-          >
-            {service.text}
+                <div
+                  className={`bg-[#d9e8f1]  text-black text-md px-5 pb-3 rounded-b-xl transition-all duration-300 overflow-hidden ${
+                    openIndex === index
+                      ? "max-h-screen opacity-100 visible"
+                      : "max-h-0 opacity-0 invisible"
+                  }`}
+                >
+                  {service.text}
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-      ))}
-    </div>
         </div>
       </div>
     </div>

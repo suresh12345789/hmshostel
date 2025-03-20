@@ -14,58 +14,78 @@ const Navbar = () => {
     return location.hash === hash ? "text-[#CA3A03]" : "";
   };
 
+  const handleScroll = (hash) => {
+    setIsMenuOpen(false);
+
+    setTimeout(() => {
+      const element = document.querySelector(hash);
+      if (element) {
+        const navbarHeight = document.querySelector("header").offsetHeight;
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementPosition - navbarHeight - 20,
+          behavior: "smooth",
+        });
+      }
+    }, 100);
+  };
+
   return (
     <header className="bg-white shadow-lg w-full z-10 sticky top-0">
-      <div className="flex items-center justify-between md:py-4 py-2 px-5 md:px-10 ">
+      <div className="flex items-center justify-between md:py-4 py-2 px-5 md:px-10">
         <div>
           <a href="/">
             <img
               src={logo}
-              alt="images"
+              alt="logo"
               className="md:w-[120px] md:h-[80px] w-[90px] h-[65px] object-cover"
             />
           </a>
         </div>
 
-        <nav className="items-center hidden lg:space-x-16 space-x-4 md:flex text-lg font-semibold">
+        <nav className="items-center hidden lg:space-x-12 space-x-4 md:flex text-lg font-semibold">
           <HashLink smooth to="#" className={`group w-max ${isActive("#")}`}>
             Home
           </HashLink>
 
-          
           <HashLink
             smooth
             to="#About"
             className={`group w-max duration-700 ${isActive("#About")}`}
+            onClick={() => handleScroll("#About")}
           >
             About Us
           </HashLink>
 
           <HashLink
-          smooth
-          to="#HowitsWorks"
-          className={`group w-max ${isActive("#HowitsWorks")}`}
-        >
-          How it works
-        </HashLink>
-
-
+            smooth
+            to="#HowitsWorks"
+            className={`group w-max ${isActive("#HowitsWorks")}`}
+            onClick={() => handleScroll("#HowitsWorks")}
+          >
+            How it works
+          </HashLink>
           <HashLink
             smooth
-            to="#Download"
-            className={`group w-max duration-700 ${isActive("#Download")}`}
+            to="#Contact"
+            className={`group w-max  bg-customRed rounded-lg ${isActive(
+              "#Contact"
+            )}`}
+            onClick={() => handleScroll("#Contact")}
           >
-            Download
+            Contact Us
           </HashLink>
 
           <HashLink
             smooth
-            to="#Contact"
-            className={`group w-max  bg-customRed px-3 py-2 rounded-lg  ${isActive(
-              "#Contact"
+            to="#Download"
+            className={`group bg-red-800 text-customwhite rounded-3xl px-3 py-2 w-max duration-700 ${isActive(
+              "#Download"
             )}`}
+            onClick={() => handleScroll("#Download")}
           >
-            Contact Us
+            Book a Demo
           </HashLink>
         </nav>
 
@@ -74,8 +94,9 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-50 z-50  text-black font-semibold text-xl transition-transform transform ${
+        className={`fixed inset-0 bg-black bg-opacity-50 z-50 text-black font-semibold text-xl transition-transform transform ${
           isMenuOpen
             ? "translate-x-0 duration-700"
             : "translate-x-full duration-700"
@@ -98,7 +119,7 @@ const Navbar = () => {
               smooth
               to="#"
               className={`${isActive("#")}`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => handleScroll("#")}
             >
               Home
             </HashLink>
@@ -107,7 +128,7 @@ const Navbar = () => {
               smooth
               to="#HowitsWorks"
               className={`${isActive("#HowitsWorks")}`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => handleScroll("#HowitsWorks")}
             >
               How it works
             </HashLink>
@@ -116,27 +137,29 @@ const Navbar = () => {
               smooth
               to="#About"
               className={`${isActive("#About")}`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => handleScroll("#About")}
             >
               About Us
             </HashLink>
 
             <HashLink
               smooth
-              to="#Download"
-              className={`${isActive("#Download")}`}
-              onClick={() => setIsMenuOpen(false)}
+              to="#Contact"
+              className={`${isActive("#Contact")}`}
+              onClick={() => handleScroll("#Contact")}
             >
-              Download
+              Contact Us
             </HashLink>
 
             <HashLink
               smooth
-              to="#Contact"
-              className={`${isActive("#Contact")}`}
-              onClick={() => setIsMenuOpen(false)}
+              to="#Download"
+              className={`group bg-red-800 text-customwhite rounded-3xl px-3 py-2 w-max duration-700 ${isActive(
+                "#Download"
+              )}`}
+              onClick={() => handleScroll("#Download")}
             >
-              Contact Us
+              Book a Demo
             </HashLink>
           </nav>
         </div>

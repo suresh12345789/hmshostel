@@ -25,45 +25,36 @@ const Download = () => {
 
         <form className="mt-6 space-y-5">
           <div>
-            <label htmlFor="fullName" className="block text-md font-medium ">
-              Name
-            </label>
+            <label className=" text-md ">Name</label>
             <input
               id="Name"
               type="text"
-              placeholder="Enter Your Full Name"
-              className="outline-none border-b-2 border-black text-customblack text-sm mt-1 p-3 w-full bg-transparent  placeholder-black-600"
+              className="outline-none border-b-[0.5px] border-black text-customblack text-sm mt-1 w-full bg-transparent"
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-md font-medium">
-              E-mail
-            </label>
+            <label className=" text-md ">E-mail</label>
             <input
               id="email"
               type="email"
-              placeholder="Enter your e-mail"
-              className="outline-none border-b-2 border-black text-customblack text-sm mt-1 p-3 w-full bg-transparent  placeholder-black-300"
+              className="outline-none border-b-[0.5px] border-black text-customblack text-sm mt-1 w-full bg-transparent"
             />
           </div>
 
           <div>
-            <label htmlFor="phone" className="block text-md font-medium ">
-              Phone Number
-            </label>
+            <label className=" text-md ">Phone Number</label>
             <input
               id="phone"
               type="Number"
-              placeholder="Phone Number"
-              className="outline-none border-b-2 border-black text-customblack text-sm mt-1 p-3 w-full bg-transparent placeholder-black-300"
+              className="outline-none border-b-[0.5px] border-black text-customblack text-sm mt-1 p-3 w-full bg-transparent"
             />
           </div>
 
           <div className=" grid place-content-center">
             <button
               type="submit"
-              className="bg-indigo-200 mt-5  text-customblack w-full md:w-[300px] px-5 py-3 font-semi rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+              className="bg-customwhite mt-5  text-customblack w-full md:w-[300px] px-5 py-3 font-semi rounded-lg shadow-md transform hover:scale-105 transition duration-300"
             >
               Send Request
             </button>

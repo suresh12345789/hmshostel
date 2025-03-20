@@ -12,15 +12,17 @@ function Home() {
           className="w-full h-[300px]  md:h-[400px]  lg:h-[500px] rounded-3xl  object-cover"
         />
         <div className="absolute sm:top-[30px] lg:top-[70px] md:top-[40px] top-[30px] sm:left-[20px]  left-20 md:left-[30px] w-full">
-          <h1 className="md:text-3xl lg:text-4xl sm:text-xl text-lg w-1/2 font-semi   text-black ">
-            Effortless Hostel Management, Seamless Operations, Anytime{" "}
+          <h1 className="md:text-3xl lg:text-4xl sm:text-xl text-lg w-1/2 font-semi    text-black ">
+            Effortless{" "}
+            <span className="text-orange-500">Hostel Management,</span> Seamless
+            Operations, Anytime{" "}
           </h1>
           <h1 className=" text-xl md:text-2xl  lg:text-2xl w-1/2 font-semi absolute  top-[120px] md:top-[160px] ">
             Streamline Hostel Management on <br /> the Go, Anytime
           </h1>
         </div>
 
-        <button className=" bg-white    md:left-[30px] lg:left-[30px] absolute  md:top-[300px] lg:top-[350px]   py-3  lg:px-12 md:px-8 rounded-full text-black font-semibold  text-md lg:text-xl">
+        <button className=" bg-white    md:left-[30px] lg:left-[30px] absolute  md:top-[300px] lg:top-[350px]   py-3  lg:px-12 md:px-8 rounded-3xl text-black font-semibold  text-md lg:text-xl">
           Start with a free plane
         </button>
       </div>

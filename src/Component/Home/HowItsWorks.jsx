@@ -45,7 +45,7 @@ const HowItsWorks = () => {
                     </h1>
                   </div>
                   <div className="">
-                    <h2 className=" md:px-2 md:py-2 text-xl md:text-2xl font-semibold ">
+                    <h2 className=" md:px-2 md:py-2 text-lg md:text-2xl font-semibold ">
                       {item.Question}
                     </h2>
                   </div>

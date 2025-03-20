@@ -4,7 +4,6 @@ import { MdPayments } from "react-icons/md";
 import { IoMdBed } from "react-icons/io";
 import { RiCustomerServiceFill } from "react-icons/ri";
 
-
 function Manage() {
   const data = [
     {
@@ -35,18 +34,19 @@ function Manage() {
 
   return (
     <div>
-      <div className="text-center  mx-10 pt-10 rounded-3xl  p-10 mt-10">
-        <h1 className=" lg:text-4xl md:text-4xl text-xl font-semibold  leading-snug">
+      <div className="text-center mx-5  md:mx-10  md:pt-10 rounded-3xl bg-secondary p-5  md:p-10 mt-10">
+        <h1 className=" lg:text-4xl md:text-3xl text-xl font-semibold leading-7">
           Manage bookings, room assignments, payments, user profiles, feedback,
-          services, reports, and notifications efficiently.
+          <span> services, reports, and notifications efficiently.</span>
         </h1>
       </div>
 
       <div className=" lg:mx-10 md:mx-8  mx-5 mt-10">
         <div className="  mt-5 rounded-3xl  bg-primary   relative   p-5   lg::p-10 md:p-8   gap-3 ">
           <div className="flex items-center gap-3   left-5 md:left-10 absolute top-6">
-   
-            <h1 className="text-3xl md:text-[40px] text-customblack font-semi">Benefits</h1>
+            <h1 className="text-3xl md:text-[40px] text-customblack font-semi">
+              Benefits
+            </h1>
           </div>
 
           <div className="md:grid-cols-2 grid-cols-1  grid gap-5 mt-14">
@@ -57,7 +57,7 @@ function Manage() {
                     <h1 className="   text-4xl  lg:text-5xl font-semibold text-[#9FFCF2]">
                       {value.icon}
                     </h1>
-                    <h1 className=" md:pl-5 pl-3   text-xl md:text-2xl   font-semibold">
+                    <h1 className=" md:pl-5 pl-3   text-lg md:text-2xl   font-semibold">
                       {value.title}
                     </h1>
                   </div>

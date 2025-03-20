@@ -13,6 +13,8 @@ import Download from "./Component/Home/Download";
 export default function App() {
   return (
     <BrowserRouter>
+
+
       <Navbar />
       <Home />
 

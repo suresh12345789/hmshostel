@@ -22,7 +22,7 @@ function Home() {
           </h1>
         </div>
 
-        <button className=" bg-white    md:left-[30px] lg:left-[30px] absolute  md:top-[300px] lg:top-[350px]   py-3  lg:px-12 md:px-8 rounded-3xl text-black font-semibold  text-md lg:text-xl">
+        <button className=" bg-orange-500 text-customwhite  md:left-[30px] lg:left-[30px] absolute  md:top-[300px] lg:top-[350px]   py-3  lg:px-12 md:px-8 rounded-3xl  font-semibold  text-md lg:text-xl">
           Start with a free plane
         </button>
       </div>

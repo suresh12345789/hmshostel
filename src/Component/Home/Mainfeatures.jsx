@@ -8,35 +8,35 @@ function Mainfeatures() {
   const data = [
     {
       id: 1,
-      title: "Staff Management",
-      text: "Staff Management streamlines the tracking of attendance, schedules, and payroll for hostel staff. It ensures smooth operations by automating routine tasks and improving workforce efficiency.",
+      title: "Hostel",
+      text: "Manage hostels by assigning floors and rooms, editing the menu daily, handling tenant management, and ensuring visibility of vacant beds with detailed reports.",
       icon1: <GoArrowUp />,
       icon2: <BsArrowDown />,
     },
     {
       id: 2,
-      title: "Room Allocation",
+      title: "Book Bed",
       text: "Room Allocation simplifies the booking and assignment of rooms to tenants, ensuring efficient space management. It tracks occupancy in real time, helping avoid overbooking and ensuring a smooth stay for guests.",
       icon1: <GoArrowUp />,
       icon2: <BsArrowDown />,
     },
     {
       id: 3,
-      title: "Financial Tracking",
+      title: "Payments",
       text: "Financial Tracking helps manage rent collection, payments, and expenses efficiently. It provides real-time insights into hostel finances, ensuring accurate and timely financial reporting.",
       icon1: <GoArrowUp />,
       icon2: <BsArrowDown />,
     },
     {
       id: 4,
-      title: "Tenant Communication",
+      title: "Complainets & Help",
       text: "Tenant Communication streamlines interactions between hostel management and tenants through instant notifications and messaging. It helps keep tenants informed about updates, maintenance, and important announcements.",
       icon1: <GoArrowUp />,
       icon2: <BsArrowDown />,
     },
     {
       id: 5,
-      title: "Reports & Analytics",
+      title: "Reports",
       text: "Reports & Analytics provide detailed insights into occupancy, revenue, and operations. It helps hostel management make data-driven decisions to optimize performance and efficiency.",
       icon1: <GoArrowUp />,
       icon2: <BsArrowDown />,
@@ -80,7 +80,7 @@ function Mainfeatures() {
                 </button>
 
                 <div
-                  className={`bg-[#d9e8f1]  text-black text-md px-5 pb-3 rounded-b-xl transition-all duration-300 overflow-hidden ${
+                  className={`bg-[#d9e8f1]  text-black text-md px-5 py-3 pb-3 rounded-b-xl transition-all duration-300 overflow-hidden ${
                     openIndex === index
                       ? "max-h-screen opacity-100 visible"
                       : "max-h-0 opacity-0 invisible"

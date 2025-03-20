@@ -61,7 +61,7 @@ const HowItsWorks = () => {
           </div>
           <div className="mt-5">
             <img
-              className="rounded-3xl md:h-[984px]  w-full"
+              className="rounded-3xl md:h-[1016px]  w-full"
               src={works}
               alt="images"
             />

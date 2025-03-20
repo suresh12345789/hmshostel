@@ -16,7 +16,7 @@ function Manage() {
       id: 1,
       title: "Hostel & Staff Management",
       icon: <GrUserManager />,
-      text: "Hostel & Staff Management simplifies staff tracking, attendance, and payroll. Automate routine tasks to improve efficiency and reduce errors. Ensure smooth operations and keep your team organized effortlessly.",
+      text: "Hostel & Staff Management simplifies staff tracking, automates routine tasks, and enhances efficiency while reducing errors. Ensure smooth operations and keep your team effortlessly organized."
     },
     {
       id: 1,

@@ -104,7 +104,7 @@ const Navbar = () => {
         onClick={() => setIsMenuOpen(false)}
       >
         <div
-          className="absolute right-0 w-full h-full text-xl bg-primary text-center p-5 transition-transform transform shadow-lg bg-darkGrey text-tan"
+          className="absolute right-0 w-full h-full  bg-primary text-center p-5 transition-transform transform shadow-lg bg-darkGrey text-tan"
           onClick={(e) => e.stopPropagation()}
         >
           <button
@@ -114,7 +114,7 @@ const Navbar = () => {
             <MdClose size={30} />
           </button>
 
-          <nav className="mt-8 space-y-10 text-xl flex flex-col items-center">
+          <nav className="mt-8 space-y-10 text-lg flex flex-col items-center">
             <HashLink
               smooth
               to="#"

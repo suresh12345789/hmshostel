@@ -26,7 +26,7 @@ const Contact = () => {
                 <button className="text-white">
                   <FaPhoneAlt size={25} />
                 </button>
-                <a href="tel:+919948333447" className="md:text-xl text-white">
+                <a href="tel:+919948333447" className="text-[15px] :text-xl text-white">
                   +91 9948333447
                 </a>
               </div>
@@ -37,7 +37,7 @@ const Contact = () => {
                 </button>
                 <a
                   href="mailto:shivakumar@cresolinfoserv.com"
-                  className=" text-start text-white md:text-xl"
+                  className=" text-start text-white text-[15px] md:text-xl"
                 >
                   shivakumar@cresolinfoserv.com
                 </a>
@@ -79,7 +79,7 @@ const Contact = () => {
               </div>
 
               <div className="mt-5 text-[12px] md:text-[14px] flex gap-3">
-                <input type="checkbox" className="w-4" />
+                <input type="checkbox" className="w-6 md:w-4" />
                 <p className="">
                   By submitting your request, you agree to our Privacy Policy
                 </p>

@@ -8,7 +8,7 @@ const Fotter = () => {
       <div className="mx-5 mt-10 p-5 md:p-10 md:flex md:justify-around flex-col md:flex-row">
         <ul className=" mb-6 md:mb-0">
           <li>
-            <a href="#home" className="text-[20px] md:text-2xl font-semibold">
+            <a href="#home" className="text-lg md:text-2xl font-semibold">
               Hostel Management System
             </a>
           </li>
@@ -17,21 +17,21 @@ const Fotter = () => {
 
         <ul className=" leading-10  text-md  mb-6 md:mb-0">
           <li>
-            <a href="/">Home</a>
+            <a href="/" className="hover:border-b-2 hover:border-orange-500">Home</a>
           </li>
 
           <li>
-            <a href="#HowitsWorks">How it Works</a>
+            <a href="#HowitsWorks"  className="hover:border-b-2 hover:border-orange-500">How it Works</a>
           </li>
           <li>
-            <a href="#About">Abouts Us</a>
+            <a href="#About"  className="hover:border-b-2 hover:border-orange-500">Abouts Us</a>
           </li>
           <li>
-            <a href="#Download">Download</a>
+            <a href="#Download"  className="hover:border-b-2 hover:border-orange-500">Download</a>
           </li>
 
           <li>
-            <a href="#Contact">Contact Us</a>
+            <a href="#Contact"  className="hover:border-b-2 hover:border-orange-500">Contact Us</a>
           </li>
         </ul>
 

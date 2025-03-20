@@ -154,7 +154,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="#Download"
-              className={`group bg-red-800 text-customwhite rounded-3xl px-3 py-2 w-max duration-700 ${isActive(
+              className={`group bg-orange-500 text-customwhite rounded-3xl px-5 py-3 w-max duration-700 ${isActive(
                 "#Download"
               )}`}
               onClick={() => handleScroll("#Download")}

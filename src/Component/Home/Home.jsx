@@ -33,7 +33,7 @@ function Home() {
           <h1 className="sm:text-4xl text-sm leading-5 font-semi text-white text-center">
             Effortless Hostel Management, Seamless Operations, Anytime
           </h1>
-          <button className="bg-[#ca3b03cc] px-4 sm:px-10 sm:py-3 py-1 rounded-full text-white font-semi text-sm mt-2 sm:mt-5">
+          <button className="bg-orange-500 px-4 py-2 sm:px-10 sm:py-3  rounded-full text-white font-semi text-sm mt-3 sm:mt-5">
             Start with a Free Plan
           </button>
         </div>

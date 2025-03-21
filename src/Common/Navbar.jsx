@@ -46,7 +46,9 @@ const Navbar = () => {
 
         <nav className="items-center hidden lg:space-x-12 space-x-4 md:flex text-lg font-semibold">
           <HashLink smooth to="#" className={`group w-max ${isActive("#")}`}>
-            Home
+          <h1 className="hover:border-b-2 border-orange-400">   Home</h1> 
+
+         
           </HashLink>
 
           <HashLink
@@ -55,16 +57,20 @@ const Navbar = () => {
             className={`group w-max duration-700 ${isActive("#About")}`}
             onClick={() => handleScroll("#About")}
           >
-            About Us
+
+<h1 className="hover:border-b-2 border-orange-400">  About Us</h1> 
+
+          
+            
           </HashLink>
 
           <HashLink
             smooth
             to="#HowitsWorks"
             className={`group w-max ${isActive("#HowitsWorks")}`}
-            onClick={() => handleScroll("#HowitsWorks")}
+            onClick={() => handleScroll("#HowitsWorks")} 
           >
-            How it works
+            <h1 className="hover:border-b-2 border-orange-400"> How it works</h1> 
           </HashLink>
           <HashLink
             smooth
@@ -74,7 +80,7 @@ const Navbar = () => {
             )}`}
             onClick={() => handleScroll("#Contact")}
           >
-            Contact Us
+             <h1 className="hover:border-b-2 border-orange-400">Contact Us</h1> 
           </HashLink>
 
           <HashLink
@@ -86,6 +92,7 @@ const Navbar = () => {
             onClick={() => handleScroll("#Download")}
           >
             Book a Demo
+            
           </HashLink>
         </nav>
 

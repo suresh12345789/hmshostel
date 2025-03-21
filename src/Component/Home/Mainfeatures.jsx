@@ -80,7 +80,7 @@ function Mainfeatures() {
                 </button>
 
                 <div
-                  className={`bg-[#d9e8f1]  text-black text-md px-5 py-3 pb-3 rounded-b-xl transition-all duration-300 overflow-hidden ${
+                  className={`bg-[#d9e8f1]  text-black text-md px-5 pt-2 pb-1 rounded-b-xl transition-all duration-300 overflow-hidden ${
                     openIndex === index
                       ? "max-h-screen opacity-100 visible"
                       : "max-h-0 opacity-0 invisible"

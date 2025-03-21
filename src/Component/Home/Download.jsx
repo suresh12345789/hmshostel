@@ -54,7 +54,7 @@ const Download = () => {
           <div className=" grid place-content-center">
             <button
               type="submit"
-              className="bg-customwhite mt-5  text-customblack w-full md:w-[300px] px-5 py-3 font-semi rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+              className="bg-customwhite mt-5 hover:bg-orange-400 hover:text-white  text-customblack w-full md:w-[300px] px-5 py-3 font-semi rounded-lg shadow-md transform hover:scale-105 transition duration-300"
             >
               Send Request
             </button>

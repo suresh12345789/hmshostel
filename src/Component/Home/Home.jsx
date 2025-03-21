@@ -13,24 +13,22 @@ function Home() {
           className="w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl object-cover"
         />
         <div className="absolute sm:top-[30px] lg:top-[50px] md:top-[40px] top-[30px] sm:left-[20px] left-20 md:left-[30px] w-full">
-          <h1 className="md:text-2xl lg:text-4xl font-semibold text-blue-700">
+          <h1 className="md:text-2xl lg:text-4xl font-semibold text-white">
             INTRODUCING
           </h1>
-          <h1 className="md:text-xl lg:text-4xl sm:text-xl text-lg font-semibold text-gray-900">
+          <h1 className="md:text-xl lg:text-4xl sm:text-xl text-lg font-semibold text-white">
             Hostel Management Software
           </h1>
-          <h1 className="md:text-xl lg:text-4xl sm:text-xl text-lg w-1/2 font-semibold md:mt-3 lg:mt-10 text-black">
+          <h1 className="md:text-xl lg:text-4xl sm:text-xl text-lg w-1/2 font-semibold md:mt-3 lg:mt-10 text-orange-500">
             Effortless{" "}
-            <span className="text-orange-500 mx-2">Hostel Management</span>
+            <span className="text-orange-500 mx-2">Hostel Management      <span className="text-white">&</span> </span>
           </h1>
-          <h1 className="md:text-xl lg:text-4xl md:mx-28 lg:mx-60 font-semibold text-black">
-            &
-          </h1>
-          <h1 className="md:text-xl lg:text-4xl font-semibold text-black">
+       
+          <h1 className="md:text-xl lg:text-4xl font-semibold text-orange-500">
             Seamless <span className="text-orange-500">Operations</span>
           </h1>
 
-          <h1 className="text-xl md:text-xl lg:text-2xl font-semibold absolute top-[120px] md:top-[180px] lg:top-[280px]">
+          <h1 className="text-xl md:text-xl lg:text-xl font-semibold md:mt-3 lg:mt-10 text-orange-500">
             Manage Your Hostels
             <h1>Anytime, Anywhere</h1>
           </h1>
@@ -38,7 +36,7 @@ function Home() {
 
         <a
           href="#Contact" 
-          className="bg-orange-500 text-white md:left-[30px] lg:left-[30px] absolute md:top-[300px] lg:top-[430px] py-3 lg:px-12 md:px-8 rounded-3xl font-semibold text-md lg:text-xl"
+          className="bg-orange-500 text-white md:left-[30px] lg:left-[30px] absolute md:top-[300px] lg:top-[390px] py-3 lg:px-12 md:px-8 rounded-3xl font-semibold text-md lg:text-xl"
         >
           Start with a Free Trial Today!
         </a>

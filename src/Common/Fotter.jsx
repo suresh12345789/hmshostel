@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { MdEmail } from "react-icons/md";
-import logo from "../Asstes/images/Home/hmslogo.png";
+import logo from "../Asstes/images/Home/footerlogo.png.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -23,8 +23,8 @@ const Fotter = () => {
   }, []);
 
   return (
-    <div className=" text-customblack font-semibold  ">
-      <div className="mx-5 mt-10 p-5 md:p-10 grid  md:grid-cols-2 grid-cols-1  lg:grid-cols-3">
+    <div className=" text-customblack font-semibold ">
+      <div className=" mt-10 p-5 bg-[#f3e2e2]  md:p-10 grid  md:grid-cols-2 grid-cols-1  lg:grid-cols-3  rounded-xl border-4 border-double  ">
         <ul className=" mb-6 md:mb-0  ">
           <a href="/">
             <img
@@ -45,7 +45,7 @@ const Fotter = () => {
                 <h1 className="text-2xl">
                   <FaLocationDot />
                 </h1>
-                <h1 className=" ">
+                <h1 className=" text-md md:text-lg ">
                   Office Address:Cresol Infoserv Pvt. Ltd, Flat no. 303 Fortune
                   Chambers, Silicon Valley, Image Gardens Road, Madhapur,
                   Hyderabad-500081.
@@ -98,7 +98,7 @@ const Fotter = () => {
         </ul>
 
         <ul className="leading-10">
-          <li className="flex  items-center gap-2 mb-2 hover:text-orange-400">
+          <li className="flex  items-center gap-2 mb-2 hover:text-orange-400 md:text-lg text-md">
             <button className="">
             
               <MdEmail size={25}  />

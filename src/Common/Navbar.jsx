@@ -11,7 +11,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const isActive = (hash) => {
-    return location.hash === hash ? "text-[#CA3A03]" : "";
+    return location.hash === hash ? "text-[#F97316]" : "";
   };
 
   const handleScroll = (hash) => {
@@ -32,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-white shadow-lg w-full z-10 sticky top-0">
+    <header className=" shadow-lg bg-[#f3e2e2] w-full z-10 sticky top-0">
       <div className="flex items-center justify-between md:py-4 py-2 px-5 md:px-10">
         <div>
           <a href="/">
@@ -46,9 +46,7 @@ const Navbar = () => {
 
         <nav className="items-center hidden lg:space-x-12 space-x-4 md:flex text-lg font-semibold">
           <HashLink smooth to="#" className={`group w-max ${isActive("#")}`}>
-          <h1 className="hover:border-b-2 border-orange-400">   Home</h1> 
-
-         
+            <h1 className="hover:border-b-2 border-orange-400"> Home</h1>
           </HashLink>
 
           <HashLink
@@ -57,20 +55,19 @@ const Navbar = () => {
             className={`group w-max duration-700 ${isActive("#About")}`}
             onClick={() => handleScroll("#About")}
           >
-
-<h1 className="hover:border-b-2 border-orange-400">  About Us</h1> 
-
-          
-            
+            <h1 className="hover:border-b-2 border-orange-400"> About Us</h1>
           </HashLink>
 
           <HashLink
             smooth
             to="#HowitsWorks"
             className={`group w-max ${isActive("#HowitsWorks")}`}
-            onClick={() => handleScroll("#HowitsWorks")} 
+            onClick={() => handleScroll("#HowitsWorks")}
           >
-            <h1 className="hover:border-b-2 border-orange-400"> How it works</h1> 
+            <h1 className="hover:border-b-2 border-orange-400">
+              {" "}
+              How it works
+            </h1>
           </HashLink>
           <HashLink
             smooth
@@ -80,7 +77,7 @@ const Navbar = () => {
             )}`}
             onClick={() => handleScroll("#Contact")}
           >
-             <h1 className="hover:border-b-2 border-orange-400">Contact Us</h1> 
+            <h1 className="hover:border-b-2 border-orange-400">Contact Us</h1>
           </HashLink>
 
           <HashLink
@@ -92,7 +89,6 @@ const Navbar = () => {
             onClick={() => handleScroll("#Download")}
           >
             Book a Demo
-            
           </HashLink>
         </nav>
 
@@ -103,7 +99,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-50 z-50 text-black font-semibold text-xl transition-transform transform ${
+        className={`fixed inset-0  bg-opacity-50 z-50 text-black font-semibold text-xl transition-transform transform ${
           isMenuOpen
             ? "translate-x-0 duration-700"
             : "translate-x-full duration-700"
@@ -111,7 +107,7 @@ const Navbar = () => {
         onClick={() => setIsMenuOpen(false)}
       >
         <div
-          className="absolute right-0 w-full h-full  bg-primary text-center p-5 transition-transform transform shadow-lg bg-darkGrey text-tan"
+          className="absolute right-0 w-full h-full  bg-[#f3e2e2]  text-center p-5 transition-transform transform shadow-lg bg-darkGrey text-tan"
           onClick={(e) => e.stopPropagation()}
         >
           <button

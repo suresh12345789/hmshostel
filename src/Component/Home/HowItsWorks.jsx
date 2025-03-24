@@ -26,7 +26,7 @@ const HowItsWorks = () => {
     <>
       <div id="HowitsWorks" className="mx-5 md:mx-8 lg:mx-10 mt-10 ">
         <div className=" lg:flex gap-5">
-          <div className="bg-primary  p-5 md:p-8 rounded-3xl mt-5 ">
+          <div className="bg-primary lg:w-1/2  p-5 md:p-8 rounded-3xl mt-5 ">
             <div className="flex gap-5">
               <h1 className="text-3xl text-customblack  md:text-[40px] font-customFonts mb-5 md:mb-8">
                 How It Works
@@ -36,7 +36,7 @@ const HowItsWorks = () => {
             {data.map((item, index) => (
               <div
                 key={index}
-                className="mt-5 bg-white shadow-md p-5 md:p-7  md:w-full lg:w-[700px] rounded-3xl"
+                className="mt-5 bg-white shadow-md p-5 md:p-7    rounded-3xl"
               >
                 <div className="flex gap-5">
                   <div className="">
@@ -59,9 +59,9 @@ const HowItsWorks = () => {
               </div>
             ))}
           </div>
-          <div className="mt-5">
+          <div className="mt-5 lg:w-1/2">
             <img
-              className="rounded-3xl md:h-[1016px]  w-full"
+              className="rounded-3xl h-full  w-full"
               src={works}
               alt="images"
             />

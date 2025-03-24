@@ -5,7 +5,7 @@ import mobile from "../../Asstes/images/Home/tenents.png";
 function Home() {
   return (
     <div id="#">
-      {/* Desktop Version */}
+      
       <div className="mt-5 relative lg:mx-10 md:mx-8 mx-5 overflow-hidden md:block hidden">
         <img
           src={banner}
@@ -42,7 +42,7 @@ function Home() {
         </a>
       </div>
 
-      {/* Mobile Version */}
+    
       <div className="mt-2 mx-5 block md:hidden relative">
         <img
           src={mobile}

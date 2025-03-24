@@ -5,21 +5,21 @@ const HowItsWorks = () => {
   const data = [
     {
       Number: "01",
-      Question: "Property public Link and contract offer",
+      Question: "Admin app",
       Answer:
-        " Once a tenant expresses interest, the property’s public link is shared. This link provides potential tenants with comprehensive information about the apartment, including images, features, and detailed descriptions. If a tenant shows further interest, a preliminary contract offer is generated.",
+        "A Hostel Management System (HMS) Admin App streamlines hostel operations by managing student admissions, room allocation, payments, staff, and inventory. It handles facility bookings, maintenance requests, security through access control and visitor management, and automates billing. The app also enables communication via notifications and generates financial and occupancy reports. It enhances efficiency, security, and transparency, making hostel management seamless and well-organized.",
     },
     {
       Number: "02",
-      Question: "Contract And Billing",
+      Question: "User app",
       Answer:
-        "The contract outlines the terms of each rental agreement, including start and end dates, payment schedules, and the condition of fixtures and inventory. Afterward, bills are generated on a monthly basis, allowing tenants to easily view charges, make payments, track fees, and monitor their payment history effortlessly.",
+        "A Hostel Management System (HMS) User App helps students manage their hostel stay efficiently. It allows them to view room details, pay fees, request maintenance, and book facilities. Users can receive important notifications, track meal plans, and access visitor logs. The app also enables complaint submissions, view hostel rules, and communicate with the administration. It ensures convenience, transparency, and a smooth hostel experience for students.",
     },
     {
       Number: "03",
-      Question: "Checkout process contract renewal",
+      Question: "Workers App",
       Answer:
-        "The checkout process ensures a hassle-free tenant move-out by calculating final charges, performing property inspections, and processing refundable deposits. For contract renewals, the lease terms are updated, and the agreement is extended to continue without any disruption, providing a seamless transition for both the tenant and landlord.",
+        "A Hostel Management System (HMS) Warden App helps wardens oversee hostel operations efficiently. It enables room allocation, maintenance tracking, visitor management, and security monitoring. Wardens can send notices, manage complaints, monitor hostel facilities, and coordinate with staff. The app also provides real-time updates and reports for better decision-making. It enhances security, communication, and overall hostel administration, ensuring a well-managed living environment for students.",
     },
   ];
   return (

@@ -45,7 +45,7 @@ const Fotter = () => {
                 <h1 className="text-2xl">
                   <FaLocationDot />
                 </h1>
-                <h1 className=" text-md md:text-lg ">
+                <h1 className=" text-[14px] md:text-lg ">
                   Office Address:Cresol Infoserv Pvt. Ltd, Flat no. 303 Fortune
                   Chambers, Silicon Valley, Image Gardens Road, Madhapur,
                   Hyderabad-500081.

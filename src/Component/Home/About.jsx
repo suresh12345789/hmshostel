@@ -6,7 +6,7 @@ const About = () => {
     <>
       <div
         id="About"
-        className="mx-5 md:mx-8 lg:mx-10 mt-10 md:flex gap-10"
+        className="mx-5 md:mx-8 lg:mx-10 mt-10 md:flex md:gap-5  lg:gap-10"
       >
         <div className="md:w-1/2 p-5 md:p-8 lg:p-6 mt-5 rounded-3xl bg-white ">
           <div className="">
@@ -14,17 +14,17 @@ const About = () => {
               About Us
             </h1>
 
-            <div className=" md:text-xl lg:leading-8 text-black">
+            <div className=" text-[12px] md:text-xl leading-5 md:leading-8 text-black">
               <p>
                 <span className="text-orange-400 font-bold">
-                  {" "}
-                  The Hostel Management System (HMS){" "}
-                </span>{" "}
+                  
+                  The Hostel Management System (HMS)
+                </span>
                 is an advanced software solution designed to streamline and
-                automate the management of{" "}
-                <span className="text-orange-400 font-bold">
+                automate the management of
+                <span className="text-orange-400 ">
                   hostels , PGs, and hotels.
-                </span>{" "}
+                </span>
                 It provides hostel owners with a centralized platform to manage
                 bookings, payments, tenant records, and staff assignments
                 efficiently. With real-time availability updates, users can

@@ -37,14 +37,14 @@ function Manage() {
       
 
       <div className=" lg:mx-10 md:mx-8  mx-5 mt-14">
-        <div className="  mt-5 rounded-3xl     relative   p-5   lg::p-10 md:p-8   gap-3 ">
-          <div className="flex items-center gap-3   left-5 md:left-10 absolute top-6">
+        <div className="  mt-5 rounded-3xl           gap-3 ">
+          <div className="flex items-center gap-3   left-5 md:left-10 ">
             <h1 className="text-3xl md:text-[40px] text-white font-semi">
               Benefits
             </h1>
           </div>
 
-          <div className="md:grid-cols-2 grid-cols-1  grid gap-5 mt-14">
+          <div className="md:grid-cols-2 grid-cols-1  grid  md:gap-5 space-y-5 lg:gap-10 mt-14">
             {data.map((value) => (
               <div key={value.id}>
                 <div className="  rounded-3xl      shadow-md    bg-white md:w-full lg:w-fit   md:p-10 lg:p-10            border-gray-500   p-5">
@@ -52,11 +52,11 @@ function Manage() {
                     <h1 className="   text-4xl  lg:text-5xl font-semibold text-orange-500">
                       {value.icon}
                     </h1>
-                    <h1 className=" md:pl-5 pl-3   text-lg md:text-2xl   font-semibold">
+                    <h1 className=" md:pl-5 pl-3   text-md md:text-2xl   font-semibold">
                       {value.title}
                     </h1>
                   </div>
-                  <h1 className="text-sm md:text-md lg:text-xl  md:pt-5 pt-3  leading-6 text-black ">
+                  <h1 className="text-[12px] md:text-lg lg:text-xl  md:pt-5 pt-3  leading-5 text-black ">
                     {value.text}
                   </h1>
                 </div>

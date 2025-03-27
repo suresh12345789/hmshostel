@@ -25,8 +25,8 @@ const HowItsWorks = () => {
   return (
     <>
       <div id="HowitsWorks" className="mx-5 md:mx-8 lg:mx-10 mt-10 ">
-        <div className=" lg:flex gap-5">
-          <div className=" lg:w-1/2  p-5 md:p-8 rounded-3xl mt-5 ">
+        <div className=" lg:flex gap-10">
+          <div className=" lg:w-1/2    rounded-3xl mt-5 ">
             <div className="flex gap-5">
               <h1 className="text-3xl text-white md:text-[40px] font-customFonts mb-5 md:mb-8">
                 How It Works
@@ -52,7 +52,7 @@ const HowItsWorks = () => {
                 </div>
 
                 <div className="mt-3">
-                  <p className="w-full  md:text-xl leading-7   text-gray-950  font-normal">
+                  <p className="w-full  md:text-xl text-[12px]   text-gray-950  font-normal">
                     {item.Answer}
                   </p>
                 </div>

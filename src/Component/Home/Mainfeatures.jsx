@@ -71,7 +71,7 @@ function Mainfeatures() {
               <div key={service.id} className="rounded-xl  bg-white ">
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full h-full flex justify-between items-center p-5  text-white bg-orange-400 rounded-xl focus:outline-none"
+                  className="w-full h-full flex justify-between items-center p-5  text-white bg-orange-300 rounded-xl focus:outline-none"
                 >
                   <span className="text-xl font-semibold">{service.title}</span>
                   <span className="transition-transform text-white font-bold duration-300">

@@ -36,7 +36,7 @@ function Manage() {
     <div>
       
 
-      <div className=" lg:mx-10 md:mx-8  mx-5 mt-14">
+      <div className=" lg:mx-10 md:mx-8  mx-5 mt-8 md:mt-14">
         <div className="  mt-5 rounded-3xl           gap-3 ">
           <div className="flex items-center gap-3   left-5 md:left-10 ">
             <h1 className="text-3xl md:text-[40px] text-white font-semi">
@@ -44,7 +44,7 @@ function Manage() {
             </h1>
           </div>
 
-          <div className="md:grid-cols-2 grid-cols-1  grid  md:gap-5 space-y-5 md:space-y-0 lg:gap-10 mt-14">
+          <div className="md:grid-cols-2 grid-cols-1  grid  md:gap-5 space-y-5 md:space-y-0 lg:gap-10 mt-7 md:mt-14">
             {data.map((value) => (
               <div key={value.id}>
                 <div className="  rounded-3xl      shadow-md    bg-white md:w-full lg:w-fit   md:p-10 lg:p-10            border-gray-500   p-5">

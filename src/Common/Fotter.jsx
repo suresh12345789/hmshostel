@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { MdEmail } from "react-icons/md";
-import logo from "../Asstes/images/Home/footerlogo.png.png";
+import logo from "../Asstes/images/Home/Hmslog.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -23,8 +23,8 @@ const Fotter = () => {
   }, []);
 
   return (
-    <div className=" text-customblack font-semibold ">
-      <div className=" mt-10 p-5 bg-[#f3e2e2]  md:p-10 grid  md:grid-cols-2 grid-cols-1  lg:grid-cols-3  rounded-xl border-4 border-double  ">
+    <div className=" text-white ">
+      <div className=" mt-10 p-5 bg-[#02162a]  md:p-10 grid  md:grid-cols-2 grid-cols-1  lg:grid-cols-3  rounded-xl   ">
         <ul className=" mb-6 md:mb-0  ">
           <a href="/">
             <img
@@ -34,14 +34,14 @@ const Fotter = () => {
             />
           </a>
           <li className="mt-5">
-            <a href="#home" className="text-lg md:text-2xl   font-semibold   ">
+            <a href="#home" className="text-lg md:text-2xl     ">
               Hostel Management System
             </a>
           </li>
 
           <li className="pt-3">
             <a href="https://maps.app.goo.gl/QCyNbRabUNhSDA5Q9" target="_blank">
-              <div className="flex  gap-2 hover:text-orange-400">
+              <div className="flex  gap-2 hover:text-orange-600">
                 <h1 className="text-2xl">
                   <FaLocationDot />
                 </h1>
@@ -98,7 +98,7 @@ const Fotter = () => {
         </ul>
 
         <ul className="leading-10">
-          <li className="flex  items-center gap-2 mb-2 hover:text-orange-400 md:text-lg text-md">
+          <li className="flex  items-center gap-2 mb-2 hover:text-orange-600 md:text-lg text-md">
             <button className="">
             
               <MdEmail size={25}  />
@@ -108,7 +108,7 @@ const Fotter = () => {
             </a>
           </li>
 
-          <li className="flex  gap-2 hover:text-orange-400 ">
+          <li className="flex  gap-2 hover:text-orange-600 ">
             <button className="">
            
               <FaPhoneVolume  size={25}  />
@@ -120,14 +120,14 @@ const Fotter = () => {
             <h1 className="text-xl">Follow Us:</h1>
 
             <div className="flex text-3xl pt-3 gap-3 ">
-              <li className=" hover:text-orange-400">
+              <li className=" hover:text-orange-600">
                 <a href="https://www.instagram.com/cresol_infoserv/?igshid=MzRlODBiNWFlZA%3D%3D">
                   <FaInstagramSquare />{" "}
                 </a>
               </li>
-              <li className="hover:text-orange-400"> <a href="https://www.linkedin.com/company/cresol-infoserv-pvt-ltd/"><FaLinkedin /> </a> </li>
+              <li className="hover:text-orange-600"> <a href="https://www.linkedin.com/company/cresol-infoserv-pvt-ltd/"><FaLinkedin /> </a> </li>
 
-              <h1 className="hover:text-orange-400"> <a href="https://www.facebook.com/cresolinfoservpvtltd/"><FaFacebook /> </a> </h1>
+              <h1 className="hover:text-orange-600"> <a href="https://www.facebook.com/cresolinfoservpvtltd/"><FaFacebook /> </a> </h1>
 
             </div>
 

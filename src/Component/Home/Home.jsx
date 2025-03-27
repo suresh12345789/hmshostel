@@ -10,25 +10,25 @@ function Home() {
         <img
           src={banner}
           alt="Hostel Management Banner"
-          className="w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl object-cover"
+          className="w-full h-[300px] md:h-[400px] lg:h-[530px] rounded-3xl object-cover"
         />
         <div className="absolute sm:top-[30px] lg:top-[50px] md:top-[40px] top-[30px] sm:left-[20px] left-20 md:left-[30px] w-full">
-          <h1 className="md:text-2xl lg:text-4xl font-semibold text-white">
+          <h1 className="md:text-2xl lg:text-4xl font-semibold text-orange-500">
             INTRODUCING
           </h1>
-          <h1 className="md:text-xl lg:text-4xl sm:text-xl text-lg font-semibold text-white">
+          <h1 className="md:text-xl lg:text-4xl sm:text-xl text-lg font-semibold text-orange-500">
             Hostel Management Software
           </h1>
-          <h1 className="md:text-xl lg:text-4xl sm:text-xl text-lg w-1/2 font-semibold md:mt-3 lg:mt-10 text-orange-500">
+          <h1 className="md:text-xl lg:text-4xl sm:text-xl text-lg w-1/2 font-semibold md:mt-3 lg:mt-10 text-black">
             Effortless{" "}
-            <span className="text-orange-500 mx-2">Hostel Management      <span className="text-white">&</span> </span>
+            <span className="text-black mx-2">Hostel Management      <span className="text-orange-500">&</span> </span>
           </h1>
        
-          <h1 className="md:text-xl lg:text-4xl font-semibold text-orange-500">
-            Seamless <span className="text-orange-500">Operations</span>
+          <h1 className="md:text-xl lg:text-4xl font-semibold text-black">
+            Seamless <span className="text-black">Operations</span>
           </h1>
 
-          <h1 className="text-xl md:text-xl lg:text-xl font-semibold md:mt-3 lg:mt-10 text-orange-500">
+          <h1 className="text-xl md:text-xl lg:text-xl font-semibold md:mt-3 lg:mt-10 text-black">
             Manage Your Hostels
             <h1>Anytime, Anywhere</h1>
           </h1>
@@ -36,7 +36,7 @@ function Home() {
 
         <a
           href="#Contact" 
-          className="bg-orange-500 text-white md:left-[30px] lg:left-[30px] absolute md:top-[300px] lg:top-[390px] py-3 lg:px-12 md:px-8 rounded-3xl font-semibold text-md lg:text-xl"
+          className="bg-orange-500 text-white md:left-[30px] lg:left-[30px] absolute md:top-[300px] lg:top-[390px] py-3  md:px-8 rounded-3xl font-semibold text-md lg:text-md"
         >
           Start with a Free Trial Today!
         </a>

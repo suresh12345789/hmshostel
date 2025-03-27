@@ -36,10 +36,10 @@ function Manage() {
     <div>
       
 
-      <div className=" lg:mx-10 md:mx-8  mx-5 mt-10">
-        <div className="  mt-5 rounded-3xl  bg-primary   relative   p-5   lg::p-10 md:p-8   gap-3 ">
+      <div className=" lg:mx-10 md:mx-8  mx-5 mt-14">
+        <div className="  mt-5 rounded-3xl     relative   p-5   lg::p-10 md:p-8   gap-3 ">
           <div className="flex items-center gap-3   left-5 md:left-10 absolute top-6">
-            <h1 className="text-3xl md:text-[40px] text-customblack font-semi">
+            <h1 className="text-3xl md:text-[40px] text-white font-semi">
               Benefits
             </h1>
           </div>

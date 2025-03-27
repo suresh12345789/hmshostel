@@ -6,7 +6,7 @@ import contact from "../../Asstes/images/Home/contact.png";
 const Contact = () => {
   return (
     <>
-      <div id="Contact" className="mx-5 md:mx-8 lg:mx-10 mt-10 shadow-lg shadow-gray-300 rounded-3xl  ">
+      <div id="Contact" className="mx-5 md:mx-8 lg:mx-10 mt-10  shadow-gray-300 rounded-3xl  ">
         <div
           className="relative rounded-3xl shadow-sm p-5"
           style={{
@@ -88,7 +88,7 @@ const Contact = () => {
               <div className="mt-5 grid place-content-center">
                 <button
                   type="submit"
-                  className="bg-customwhite  shadow-md transform hover:scale-105 transition duration-300  hover:text-white hover:bg-orange-600 text-customblack rounded-lg  w-[200px]  px-3 py-2 font-semibold"
+                  className="bg-customwhite  shadow-md transform hover:scale-105 transition duration-300   hover:text-white hover:bg-orange-600 text-white rounded-lg  w-[200px]  px-3 py-2 font-semibold"
                 >
                   Send
                 </button>

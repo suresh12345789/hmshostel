@@ -8,13 +8,13 @@ const About = () => {
         id="About"
         className="mx-5 md:mx-8 lg:mx-10 mt-10 md:flex gap-10"
       >
-        <div className="md:w-1/2 p-5 md:p-8 lg:p-6 mt-5 rounded-3xl bg-secondary ">
+        <div className="md:w-1/2 p-5 md:p-8 lg:p-6 mt-5 rounded-3xl bg-white ">
           <div className="">
-            <h1 className="text-3xl flex justify-center text-customblack items-center  md:text-[40px] font-semibold  lg:mb-10 md:mb-8 mb-5">
+            <h1 className="text-3xl flex justify-center text-black  items-center  md:text-[40px] font-semibold  lg:mb-10 md:mb-8 mb-5">
               About Us
             </h1>
 
-            <div className=" md:text-xl lg:leading-10 text-customblack">
+            <div className=" md:text-xl lg:leading-8 text-black">
               <p>
                 <span className="text-orange-400 font-bold">
                   {" "}
@@ -22,7 +22,7 @@ const About = () => {
                 </span>{" "}
                 is an advanced software solution designed to streamline and
                 automate the management of{" "}
-                <span className="text-blue-400 font-bold">
+                <span className="text-orange-400 font-bold">
                   hostels , PGs, and hotels.
                 </span>{" "}
                 It provides hostel owners with a centralized platform to manage

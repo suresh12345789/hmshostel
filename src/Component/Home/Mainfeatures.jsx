@@ -59,7 +59,7 @@ function Mainfeatures() {
             className="rounded-2xl h-[400px] md:h-[500px] lg:h-[500px] w-full object-cover"
           />
           <div className="flex items-center gap-3   left-5 md:left-10 absolute top-7 md:top-10">
-            <h1 className="text-3xl text-black md:text-[40px] font-semibold">
+            <h1 className="text-3xl text-orange-400 md:text-[40px] font-semibold">
               Main features
             </h1>
           </div>
@@ -68,19 +68,19 @@ function Mainfeatures() {
         <div>
           <div className="space-y-5">
             {data.map((service, index) => (
-              <div key={service.id} className="rounded-xl bg-[#d9e8f1] ">
+              <div key={service.id} className="rounded-xl  bg-white ">
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full h-full flex justify-between items-center p-5  bg-[#b1e0f4] rounded-xl focus:outline-none"
+                  className="w-full h-full flex justify-between items-center p-5  text-white bg-orange-400 rounded-xl focus:outline-none"
                 >
                   <span className="text-xl font-semibold">{service.title}</span>
-                  <span className="transition-transform text-black font-bold duration-300">
+                  <span className="transition-transform text-white font-bold duration-300">
                     {openIndex === index ? service.icon1 : service.icon2}
                   </span>
                 </button>
 
                 <div
-                  className={`bg-[#d9e8f1]  text-black text-md px-5 pt-2 pb-1 rounded-b-xl transition-all duration-300 overflow-hidden ${
+                  className={` bg-white   text-black  text-md px-5 pt-2 pb-1 rounded-b-xl transition-all duration-300 overflow-hidden ${
                     openIndex === index
                       ? "max-h-screen opacity-100 visible"
                       : "max-h-0 opacity-0 invisible"

@@ -19,7 +19,7 @@ const Download = () => {
         <h1 className="text-2xl md:text-[40px] font-bold text-center tracking-wide">
           Book Your Demo Now!
         </h1>
-        <p className="text-lg text-center ">
+        <p className=" md:text-lg text-md text-center ">
           Fill in the form to book a demo and get started with our app.
         </p>
 

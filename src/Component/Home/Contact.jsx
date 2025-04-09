@@ -6,7 +6,10 @@ import contact from "../../Asstes/images/Home/contact.png";
 const Contact = () => {
   return (
     <>
-      <div id="Contact" className="mx-5 md:mx-8 lg:mx-10 mt-10  shadow-gray-300 rounded-3xl  ">
+      <div
+        id="Contact"
+        className="mx-5 md:mx-8 lg:mx-10 mt-10  shadow-gray-300 rounded-3xl  "
+      >
         <div
           className="relative rounded-3xl shadow-sm p-5"
           style={{
@@ -26,7 +29,10 @@ const Contact = () => {
                 <button className="text-white">
                   <FaPhoneAlt size={25} />
                 </button>
-                <a href="tel:+919948333447" className="text-[15px] :text-xl text-white">
+                <a
+                  href="tel:+919948333447"
+                  className="text-[15px] :text-xl text-white"
+                >
                   +91 9948333447
                 </a>
               </div>

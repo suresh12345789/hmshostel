@@ -2,6 +2,52 @@ import React from "react";
 import firstdownload from "../../Asstes/images/Home/contact.png.png";
 
 const Download = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const name = e.target.name.value.trim();
+    const email = e.target.email.value.trim();
+    const number = e.target.number.value.trim();
+
+    // Basic validation
+    if (!name || !email || !number) {
+      alert("All fields are required.");
+      return;
+    }
+
+    // Simple email format check
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+    const numberRegex = /^\d{10}$/;
+    if (!numberRegex.test(number)) {
+      alert(
+        "Phone number must be exactly 10 digits and should consist digits only"
+      );
+      return;
+    }
+
+    const url =
+      "https://script.google.com/macros/s/AKfycbxjv9jAQiSmr3mnXrMOpQv3dbvUdTRyDIfbSIM36QlRH0G2ymZ8DfFDLcENrmjJVhfx/exec";
+
+    fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `Name=${name}&Email=${email}&Number=${number}`,
+    })
+      .then((res) => res.text())
+      .then((data) => {
+        alert("Your request has been submitted successfully!");
+        e.target.reset();
+      })
+      .catch((error) => {
+        console.error("Submission error:", error);
+        alert("Something went wrong. Please try again later.");
+      });
+  };
+
   return (
     <div
       id="Download"
@@ -19,35 +65,32 @@ const Download = () => {
         <h1 className="text-2xl md:text-[40px] font-bold text-center tracking-wide">
           Book Your Demo Now!
         </h1>
-        <p className=" md:text-lg text-md text-center ">
+        <p className="text-lg text-center ">
           Fill in the form to book a demo and get started with our app.
         </p>
 
-        <form className="mt-6 space-y-5">
+        <form onSubmit={handleSubmit} className="mt-6 space-y-5">
           <div>
             <label className=" text-md ">Name</label>
             <input
-              id="Name"
-              type="text"
-              className="outline-none border-b-[0.5px] border-white text-customblack text-sm mt-1 w-full bg-transparent"
+              name="name"
+              className="outline-none border-b-[0.5px] border-white text-white text-sm mt-1 w-full bg-transparent"
             />
           </div>
 
           <div>
             <label className=" text-md ">E-mail</label>
             <input
-              id="email"
-              type="email"
-              className="outline-none border-b-[0.5px] border-white text-customblack text-sm mt-1 w-full bg-transparent"
+              name="email"
+              className="outline-none border-b-[0.5px] border-white text-white text-sm mt-1 w-full bg-transparent"
             />
           </div>
 
           <div>
             <label className=" text-md ">Phone Number</label>
             <input
-              id="phone"
-              type="Number"
-              className="outline-none border-b-[0.5px] border-white text-customblack text-sm mt-1 p-3 w-full bg-transparent"
+              name="number"
+              className="outline-none border-b-[0.5px] border-white text-white text-sm mt-1 p-3 w-full bg-transparent"
             />
           </div>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../../Asstes/images/Home/about1.png";
+import aboutImage from "../../Asstes/images/Home/threefrimes.png";
 
 const About = () => {
   return (
@@ -8,15 +8,15 @@ const About = () => {
         id="About"
         className="mx-5 md:mx-8 lg:mx-10 mt-10 md:flex md:gap-5  lg:gap-10"
       >
-        <div className="md:w-1/2 p-5 md:p-8 lg:p-6 mt-5 rounded-3xl bg-white ">
+        <div className="md:w-1/2 p-5 md:p-8 lg:p-6 mt-5 rounded-3xl ">
           <div className="">
-            <h1 className="text-3xl flex justify-center text-black  items-center  md:text-[40px] font-semibold  lg:mb-10 md:mb-8 mb-5">
+            <h1 className="text-3xl flex justify-center text-white items-center  md:text-[40px] font-semibold  lg:mb-10 md:mb-8 mb-5">
               About Us
             </h1>
 
-            <div className=" text-[12px] md:text-xl leading-5 md:leading-8 text-black">
+            <div className=" text-[12px] md:text-xl font-normal leading-5 md:leading-8 text-white">
               <p>
-                <span className="text-orange-400 font-bold">
+                <span className="text-orange-400 ">
                   
                   The Hostel Management System (HMS)
                 </span>

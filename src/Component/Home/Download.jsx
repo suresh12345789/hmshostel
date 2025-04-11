@@ -51,7 +51,7 @@ const Download = () => {
   return (
     <div
       id="Download"
-      className=" mt-10 mx-5 md:mx-8 lg:mx-10 p-2 md:p-10 md:flex gap-10 items-center justify-center rounded-3xl shadow-sm"
+      className=" mt-10 mx-5 md:mx-8 lg:mx-10 p-2 md:p-10 lg:flex gap-10 items-center justify-center rounded-3xl shadow-sm"
     >
       <div className="flex justify-center items-center">
         <img

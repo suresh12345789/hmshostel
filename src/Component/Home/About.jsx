@@ -4,17 +4,15 @@ import aboutImage from "../../Asstes/images/Home/threefrimes.png";
 const About = () => {
   return (
     <>
-      <div
-        id="About"
-        className="mx-5 md:mx-8 lg:mx-10 mt-10 md:flex md:gap-5  lg:gap-10"
+      <div id="About" className="mx-5 md:px-10 flex flex-col-reverse lg:flex-row lg:px-24 mt-10  md:gap-5  lg:gap-10"
       >
-        <div className="md:w-1/2 p-5 md:p-8 lg:p-6 mt-5 rounded-3xl ">
+        <div className="lg:w-1/2 flex flex-col-reverse lg:flex-row   mt-5 rounded-3xl ">
           <div className="">
-            <h1 className="text-3xl flex justify-center text-white items-center  md:text-[40px] font-semibold  lg:mb-10 md:mb-8 mb-5">
+            <h1 className="text-3xl flex  text-white items-center  md:text-[40px] font-semibold  lg:mb-10 md:mb-8 mb-5">
               About Us
             </h1>
 
-            <div className=" text-[12px] md:text-xl font-normal leading-5 md:leading-8 text-white">
+            <div className=" text-[12px] md:text-xl  leading-5 md:leading-8 text-white">
               <p>
                 <span className="text-orange-400 ">
                   
@@ -42,7 +40,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-5 md:w-1/2">
+        <div className="mt-5 lg:w-1/2">
           <img
             src={aboutImage}
             className=" rounded-3xl w-full md:h-full  object-cover"

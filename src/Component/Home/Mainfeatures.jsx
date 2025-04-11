@@ -51,8 +51,8 @@ function Mainfeatures() {
   };
 
   return (
-    <div className="md:mx-10 mx-5 mt-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-5 lg:gap-10">
+    <div className="md:mx-[30px] lg:px-20 mx-5 pt-[20px]">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 pt-24 gap-5 lg:gap-10">
         <div className="relative">
           <img
             src={mobile}
@@ -72,7 +72,7 @@ function Mainfeatures() {
               <div key={service.id} className="rounded-xl">
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className={`w-full h-full flex justify-between items-center border-t-2 border-white  md:p-5 p-3 text-white  focus:outline-none relative`}
+                  className={`w-full h-full flex justify-between items-center border-t-[1px] border-white  md:p-5 p-3 text-white  focus:outline-none relative`}
                 >
                   <span
                     className={`md:text-xl text-md font-semibold ${

@@ -136,7 +136,7 @@ const Fotter = () => {
         </ul>
       </div>
 
-      <div className="text-center bg-orange-500 text-white py-3">
+      <div className="text-center bg-[#001324] text-orange-500 py-4">
         <span className="">&#169; {year} Hms. All Rights Reserved</span>
       </div>
     </div>

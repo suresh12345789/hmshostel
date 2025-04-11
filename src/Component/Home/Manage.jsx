@@ -16,7 +16,7 @@ function Manage() {
       id: 1,
       title: "Hostel & Staff Management",
       icon: <GrUserManager />,
-      text: "Hostel & Staff Management simplifies staff tracking, automates routine tasks, and enhances efficiency while reducing errors. Ensure smooth operations and keep your team effortlessly organized."
+      text: "Hostel & Staff Management simplifies staff tracking, automates routine tasks, and enhances efficiency while reducing errors. Ensure smooth operations and keep your team effortlessly organized.",
     },
     {
       id: 1,
@@ -34,9 +34,7 @@ function Manage() {
 
   return (
     <div>
-      
-
-      <div className=" lg:mx-10 md:mx-8  mx-5 mt-8 md:mt-14">
+      <div className=" lg:px-24 md:px-10  mx-5 mt-8 md:mt-14">
         <div className="  mt-5 rounded-3xl           gap-3 ">
           <div className="flex items-center gap-3   left-5 md:left-10 ">
             <h1 className="text-3xl md:text-[40px] text-white font-semi">
@@ -44,19 +42,19 @@ function Manage() {
             </h1>
           </div>
 
-          <div className="md:grid-cols-2 grid-cols-1  grid  md:gap-5 space-y-5 md:space-y-0 lg:gap-10 mt-7 md:mt-14">
+          <div className="md:grid-cols-2 grid-cols-1 grid md:gap-5 space-y-5 md:space-y-0 lg:gap-10 mt-7 md:mt-14">
             {data.map((value) => (
               <div key={value.id}>
-                <div className="  rounded-3xl      shadow-md    bg-white md:w-full lg:w-fit   md:p-10 lg:p-10            border-gray-500   p-5">
+                <div className="rounded-3xl shadow-[#061A715E] bg-white/5 border backdrop-blur-[1px] md:w-full lg:w-fit md:p-10 lg:h-[285px]  lg:pt-5 lg:p-5 border-white p-5">
                   <div className="flex items-center">
-                    <h1 className="   text-4xl  lg:text-5xl font-semibold text-orange-500">
+                    <h1 className="text-4xl lg:text-5xl font-semibold text-[#f6490d]">
                       {value.icon}
                     </h1>
-                    <h1 className=" md:pl-5 pl-3   text-md md:text-2xl   font-semibold">
+                    <h1 className="md:pl-5 pl-3 text-md md:text-xl text-white font-semibold">
                       {value.title}
                     </h1>
                   </div>
-                  <h1 className="text-[12px] md:text-lg lg:text-xl  md:pt-5 pt-3  leading-5 text-black ">
+                  <h1 className="text-[12px] md:text-lg lg:text-lg md:pt-5 pt-3 leading-5 text-white">
                     {value.text}
                   </h1>
                 </div>

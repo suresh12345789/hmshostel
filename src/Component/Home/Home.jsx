@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../Asstes/images/Home/adminmana...png";
+import banner from "../../Asstes/images/Home/adminmana.png";
 import mobile from "../../Asstes/images/Home/tenents.png";
 
 function Home() {
@@ -40,7 +40,6 @@ function Home() {
                 Start with a Free Trial Today !
               </h1>
             </div>
-                      
           </div>
         </div>
       </div>

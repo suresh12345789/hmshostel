@@ -1,7 +1,6 @@
 import React from "react";
 import firstdownload from "../../Asstes/images/Home/contact2.png";
-
-const Download = () => {
+export default function BookDemo() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -106,6 +105,4 @@ const Download = () => {
       </div>
     </div>
   );
-};
-
-export default Download;
+}
